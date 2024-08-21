@@ -5,6 +5,7 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:htp="http://purl.org/htp#">
 
     <!-- This ontology represents the HiTOP model, detailing mental health disorders and their classifications. -->
@@ -13,13 +14,18 @@
         <rdfs:label>Dynamic Ontology for Mental Health Classification</rdfs:label>
         <rdfs:comment>Dynamic Ontology for Mental Health Classification representing various classes to structure mental health dimensions in the HiTOP model.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hitop-system.org/"/>
-        <owl:versionInfo>1.4</owl:versionInfo>
-        <dc:creator>Dr. Rogério Blitz</dc:creator>
-        <dc:date>2024-08-18</dc:date>
-        <dc:publisher>Dr. Rogério Blitz</dc:publisher>
-        <dc:contributor rdf:resource="mailto:rogerio.blitz@med.uni-jena.de"/>
+        <owl:versionInfo>1.5</owl:versionInfo>
+        <dc:creator>
+            <foaf:Person>
+                <foaf:name>Dr. Rogério Blitz</foaf:name>
+                <foaf:mbox rdf:resource="mailto:rogerio.blitz@med.uni-jena.de"/>
+            </foaf:Person>
+        </dc:creator>
+        <dc:date>2024-08-21</dc:date>
+        <dc:publisher></dc:publisher>
+        <dc:contributor>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dc:contributor>
         <dcterms:issued>2024-08-18</dcterms:issued>
-        <dcterms:rightsHolder>Dr. Rogério Blitz</dcterms:rightsHolder>
+        <dcterms:rightsHolder>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dcterms:rightsHolder>
         <dcterms:rightsHolder>Universitätsklinikum Jena</dcterms:rightsHolder>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
         <dcterms:rights>This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License.</dcterms:rights>
