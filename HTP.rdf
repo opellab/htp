@@ -1,40 +1,101 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:htp="http://purl.org/htp#">
-
-    <!-- This ontology represents the HiTOP model, detailing mental health disorders and their classifications. -->
-    <!-- It includes mechanisms for future updates and expansions to accommodate evolving models and research. -->
+<rdf:RDF xmlns="http://purl.org/htp#"
+     xml:base="http://purl.org/htp"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:htp="http://purl.org/htp#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/htp">
-        <rdfs:label>Dynamic Ontology for Mental Health Classification</rdfs:label>
-        <rdfs:comment>Dynamic Ontology for Mental Health Classification representing various classes to structure mental health dimensions in the HiTOP model.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://www.hitop-system.org/"/>
-        <owl:versionInfo>1.5</owl:versionInfo>
-        <dc:creator>
-            <foaf:Person>
-                <foaf:name>Dr. Rogério Blitz</foaf:name>
-                <foaf:mbox rdf:resource="mailto:rogerio.blitz@med.uni-jena.de"/>
-            </foaf:Person>
-        </dc:creator>
-        <dc:date>2024-08-21</dc:date>
-        <dc:publisher></dc:publisher>
         <dc:contributor>Prof. Dr. Nils Opel</dc:contributor>
+        <dc:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:mbox rdf:resource="mailto:rogerio.blitz@med.uni-jena.de"/>
+                <foaf:name>Dr. Rogério Blitz</foaf:name>
+            </rdf:Description>
+        </dc:creator>
+        <dc:date>2024-08-30</dc:date>
+        <dc:publisher>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dc:publisher>
         <dcterms:issued>2024-08-18</dcterms:issued>
-        <dcterms:rightsHolder>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dcterms:rightsHolder>
-        <dcterms:rightsHolder>Universitätsklinikum Jena</dcterms:rightsHolder>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
         <dcterms:rights>This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License.</dcterms:rights>
+        <dcterms:rightsHolder>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dcterms:rightsHolder>
+        <dcterms:rightsHolder>Universitätsklinikum Jena</dcterms:rightsHolder>
+        <rdfs:comment>Dynamic Ontology for Mental Health Classification representing various classes to structure mental health dimensions in the HiTOP model.</rdfs:comment>
+        <rdfs:label>Dynamic Ontology for Mental Health Classification</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.hitop-system.org/"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</owl:versionInfo>
     </owl:Ontology>
+    
 
-    <!-- Indicates potential future updates to the taxonomy, allowing for new categories and components. -->
-    <!-- Highlights the ontology's flexibility to incorporate new elements and relationships as research evolves. -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/htp#futureReleaseInfo -->
+
     <owl:AnnotationProperty rdf:about="http://purl.org/htp#futureReleaseInfo">
-        <rdfs:label>Future Release Information</rdfs:label>
         <rdfs:comment>
             This ontology is designed with flexibility to accommodate both vertical and horizontal changes, reflecting the evolving nature of taxonomy. 
             It utilizes a dynamic taxonomy that supports the seamless integration of new categories and subcategories, avoiding a rigid subclass hierarchy. 
@@ -43,1289 +104,2727 @@
             to reflect emerging research findings and evolving scientific insights. This design ensures that the ontology can easily incorporate 
             new taxonomic elements and relationships, thus supporting continuous enhancement and refinement.
         </rdfs:comment>
+        <rdfs:label>Future Release Information</rdfs:label>
     </owl:AnnotationProperty>
+    
 
-    <!-- This ontology defines various classes to structure mental health dimensions in the HiTOP model. -->
-    <!-- The classes range from broad categories (Superspectra) to specific manifestations (Disorder), detailing the hierarchical structure of mental health attributes. -->
-    <owl:Class rdf:about="http://purl.org/htp#Superspectra">
-        <rdfs:label>Superspectra</rdfs:label>
-        <rdfs:comment>A broad category in the HiTOP model that encompasses large domains of psychological phenomena, often representing overarching patterns of mental health.</rdfs:comment>
-    </owl:Class>
 
-    <owl:Class rdf:about="http://purl.org/htp#Spectra">
-        <rdfs:label>Spectra</rdfs:label>
-        <rdfs:comment>A level within the HiTOP model that groups related mental health issues into broad categories, providing a framework for understanding complex symptomatology.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Superspectra"/>
-    </owl:Class>
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
 
-    <owl:Class rdf:about="http://purl.org/htp#Subfactor">
-        <rdfs:label>Subfactor</rdfs:label>
-        <rdfs:comment>A more specific grouping within a spectrum, representing clusters of symptoms or traits that share common characteristics.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Spectra"/>
-    </owl:Class>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
 
-    <owl:Class rdf:about="http://purl.org/htp#Syndrome">
-        <rdfs:label>Syndrome</rdfs:label>
-        <rdfs:comment>A collection of symptoms that often occur together and characterize a particular mental disorder, as identified within the HiTOP framework.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Subfactor"/>
-    </owl:Class>
 
-    <owl:Class rdf:about="http://purl.org/htp#Component">
-        <rdfs:label>Component</rdfs:label>
-        <rdfs:comment>A specific aspect of a Syndrome or subfactor, representing distinct elements of psychological functioning or dysfunction.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Syndrome"/>
-    </owl:Class>
+    <!-- http://xmlns.com/foaf/0.1/name -->
 
-    <owl:Class rdf:about="http://purl.org/htp#Trait">
-        <rdfs:label>Trait</rdfs:label>
-        <rdfs:comment>A stable characteristic or disposition that influences behavior and thought patterns, considered in the HiTOP model as part of individual differences.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Syndrome"/>
-    </owl:Class>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
 
-    <owl:Class rdf:about="http://purl.org/htp#Symptom">
-        <rdfs:label>Symptom</rdfs:label>
-        <rdfs:comment>An observable sign or manifestation of a mental disorder, often used to diagnose and classify conditions within the HiTOP framework.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Syndrome"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Component"/>
-    </owl:Class>
 
-    <owl:Class rdf:about="http://purl.org/htp#Disorder">
-        <rdfs:label>Disorder</rdfs:label>
-        <rdfs:comment>A clinically recognized condition characterized by a specific set of symptoms and behaviors, categorized in the HiTOP model for diagnosis and treatment planning.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#Subfactor"/>
-    </owl:Class>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <!-- These object properties define the hierarchical and associative relationships between different mental health constructs in the HiTOP model. -->
-    <!-- They connect broad categories (Superspectra) down to specific manifestations (Disorder), detailing how each class relates to others. -->
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSuperspectra">
-        <rdfs:label>has Superspectra</rdfs:label>
-        <rdfs:comment>This property associates a concept with its corresponding superspectra, representing broad domains of psychological phenomena.</rdfs:comment>
-        <rdfs:range rdf:resource="http://purl.org/htp#Superspectra"/>
-        <htp:futureReleaseInfo>
-            Indicates the potential for future inclusion of additional superspectra or modification of existing ones to reflect new developments in the model.
-            Supports flexibility in expanding or refining the taxonomy based on emerging research and evolving understanding of psychological phenomena.
-        </htp:futureReleaseInfo>
-    </owl:ObjectProperty>
+    
 
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSpectra">
-        <rdfs:label>has Spectra</rdfs:label>
-        <rdfs:comment>This property links a superspectra to its underlying spectra, reflecting a more specific category within the domain.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/htp#Superspectra"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#Spectra"/>
-        <htp:futureReleaseInfo>
-            Indicates the potential for future addition of new spectra or revision of existing ones to better categorize psychological phenomena.
-            Supports adaptability in expanding the taxonomy to include emerging spectra based on new research and evolving theoretical frameworks.
-        </htp:futureReleaseInfo>
-    </owl:ObjectProperty>
 
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSubfactor">
-        <rdfs:label>has Subfactor</rdfs:label>
-        <rdfs:comment>This property connects a spectra to its subfactors, highlighting the distinct elements that make up the spectra.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#Subfactor"/>
-        <htp:futureReleaseInfo>
-            Indicates the potential for future inclusion of additional subfactors or modification of existing ones to reflect new insights and finer categorizations.
-            Supports flexibility in adapting the taxonomy to include new subfactors or refine existing ones based on ongoing research advancements.
-        </htp:futureReleaseInfo>
-    </owl:ObjectProperty>
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSyndrome">
-        <rdfs:label>has Syndrome</rdfs:label>
-        <rdfs:comment>This property associates a concept with its Syndromes, identifying collections of symptoms that occur together.</rdfs:comment>
-        <rdfs:range rdf:resource="http://purl.org/htp#Syndrome"/>
-        <htp:futureReleaseInfo>
-            Indicates the potential for future inclusion of new syndromes or revision of current ones to better reflect evolving clinical and research findings.
-            Supports the ability to update and expand the taxonomy to include new syndromic classifications as our understanding of psychological conditions progresses.
-        </htp:futureReleaseInfo>
-    </owl:ObjectProperty>
+    <!-- http://purl.org/htp#hasComponent -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/htp#hasComponent">
-        <rdfs:label>has Component</rdfs:label>
-        <rdfs:comment>This property links a Syndrome to its components, detailing the individual parts that form the Syndrome.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/htp#Syndrome"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#Component"/>
-        <htp:futureReleaseInfo>
+        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000004"/>
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000006"/>
+        <futureReleaseInfo>
             Indicates the potential for future addition of new components or revision of existing ones to capture more detailed aspects of psychological phenomena.
             Supports flexibility in updating and expanding the taxonomy with new components as more granular research findings emerge.
-        </htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>This property links a Syndrome to its components, detailing the individual parts that form the Syndrome.</rdfs:comment>
+        <rdfs:label>has Component</rdfs:label>
     </owl:ObjectProperty>
+    
 
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasTrait">
-        <rdfs:label>has Trait</rdfs:label>
-        <rdfs:comment>This property connects a Syndrome to its traits, highlighting specific characteristics or tendencies within the Syndrome.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/htp#Syndrome"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#Trait"/>
-        <htp:futureReleaseInfo>
-            Indicates the potential for future inclusion of new traits or modification of existing ones to reflect advancements in personality and psychological research.
-            Supports adaptability in refining and expanding the taxonomy to include new traits based on evolving understanding and empirical data.
-        </htp:futureReleaseInfo>
-    </owl:ObjectProperty>
 
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSymptom">
-        <rdfs:label>has Symptom</rdfs:label>
-        <rdfs:comment>This property links a concept to its symptoms, which are observable signs of a condition or disorder.</rdfs:comment>
-        <rdfs:range rdf:resource="http://purl.org/htp#Symptom"/>
-        <htp:futureReleaseInfo>
-            Indicates the potential for future inclusion of new symptoms or modification of existing ones to better align with clinical and research developments.
-            Supports the ability to update and expand the taxonomy with new symptoms as our understanding of psychological disorders evolves.
-        </htp:futureReleaseInfo>
-    </owl:ObjectProperty>
+    <!-- http://purl.org/htp#hasDisorder -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/htp#hasDisorder">
-        <rdfs:label>has Disorder</rdfs:label>
-        <rdfs:comment>This property associates a concept with specific disorders, providing a link to clinically recognized mental health conditions.</rdfs:comment>
-        <rdfs:range rdf:resource="http://purl.org/htp#Disorder"/>
-        <htp:futureReleaseInfo>
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <futureReleaseInfo>
             Indicates the potential for future addition of new disorders or revision of existing ones to reflect advances in psychiatric and psychological research.
             Supports the flexibility to expand the taxonomy with new disorder categories and update current classifications as new insights become available.
-        </htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>This property associates a concept with specific disorders, providing a link to clinically recognized mental health conditions.</rdfs:comment>
+        <rdfs:label>has Disorder</rdfs:label>
     </owl:ObjectProperty>
+    
 
-    <!-- These classes are part of the Superspectra category in the HiTOP model, representing major dimensions of mental health phenomena. -->
-    <!-- They include broad categories such as General Psychopathology. -->
-    <owl:Class rdf:about="http://purl.org/htp#GeneralPsychopathology">
-        <rdfs:label>General Psychopathology</rdfs:label>
-        <rdfs:comment>General Psychopathology refers to the broad, overarching category of mental disorders and psychological symptoms that can manifest across different mental health conditions. It encompasses a wide range of psychological phenomena that are not specific to any single disorder but may contribute to or exacerbate multiple types of mental health issues. This category includes general symptoms and traits that are commonly observed in various psychiatric conditions, such as mood disturbances, anxiety, cognitive dysfunctions, and behavioral problems.</rdfs:comment>
+
+    <!-- http://purl.org/htp#hasSpectra -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSpectra">
+        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000001"/>
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <futureReleaseInfo>
+            Indicates the potential for future addition of new spectra or revision of existing ones to better categorize psychological phenomena.
+            Supports adaptability in expanding the taxonomy to include emerging spectra based on new research and evolving theoretical frameworks.
+        </futureReleaseInfo>
+        <rdfs:comment>This property links a superspectra to its underlying spectra, reflecting a more specific category within the domain.</rdfs:comment>
+        <rdfs:label>has Spectra</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/htp#hasSubfactor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSubfactor">
+        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <futureReleaseInfo>
+            Indicates the potential for future inclusion of additional subfactors or modification of existing ones to reflect new insights and finer categorizations.
+            Supports flexibility in adapting the taxonomy to include new subfactors or refine existing ones based on ongoing research advancements.
+        </futureReleaseInfo>
+        <rdfs:comment>This property connects a spectra to its subfactors, highlighting the distinct elements that make up the spectra.</rdfs:comment>
+        <rdfs:label>has Subfactor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/htp#hasSuperspectra -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSuperspectra">
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000001"/>
+        <futureReleaseInfo>
+            Indicates the potential for future inclusion of additional superspectra or modification of existing ones to reflect new developments in the model.
+            Supports flexibility in expanding or refining the taxonomy based on emerging research and evolving understanding of psychological phenomena.
+        </futureReleaseInfo>
+        <rdfs:comment>This property associates a concept with its corresponding superspectra, representing broad domains of psychological phenomena.</rdfs:comment>
+        <rdfs:label>has Superspectra</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/htp#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSymptom">
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000008"/>
+        <futureReleaseInfo>
+            Indicates the potential for future inclusion of new symptoms or modification of existing ones to better align with clinical and research developments.
+            Supports the ability to update and expand the taxonomy with new symptoms as our understanding of psychological disorders evolves.
+        </futureReleaseInfo>
+        <rdfs:comment>This property links a concept to its symptoms, which are observable signs of a condition or disorder.</rdfs:comment>
+        <rdfs:label>has Symptom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/htp#hasSyndrome -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSyndrome">
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000004"/>
+        <futureReleaseInfo>
+            Indicates the potential for future inclusion of new syndromes or revision of current ones to better reflect evolving clinical and research findings.
+            Supports the ability to update and expand the taxonomy to include new syndromic classifications as our understanding of psychological conditions progresses.
+        </futureReleaseInfo>
+        <rdfs:comment>This property associates a concept with its Syndromes, identifying collections of symptoms that occur together.</rdfs:comment>
+        <rdfs:label>has Syndrome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/htp#hasTrait -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasTrait">
+        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000004"/>
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000007"/>
+        <futureReleaseInfo>
+            Indicates the potential for future inclusion of new traits or modification of existing ones to reflect advancements in personality and psychological research.
+            Supports adaptability in refining and expanding the taxonomy to include new traits based on evolving understanding and empirical data.
+        </futureReleaseInfo>
+        <rdfs:comment>This property connects a Syndrome to its traits, highlighting specific characteristics or tendencies within the Syndrome.</rdfs:comment>
+        <rdfs:label>has Trait</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000001 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000001">
+        <rdfs:comment>A broad category in the HiTOP model that encompasses large domains of psychological phenomena, often representing overarching patterns of mental health.</rdfs:comment>
+        <rdfs:label>Superspectra</rdfs:label>
     </owl:Class>
+    
 
-    <!-- These classes represent the main dimensions of psychopathological spectra in the HiTOP model, including various patterns of psychological and behavioral symptoms. -->
-    <!-- They encompass broad categories like Internalizing and Thought Disorder, highlighting different aspects of mental health. -->
-    <owl:Class rdf:about="http://purl.org/htp#Somatoform">
-        <rdfs:label>Somatoform</rdfs:label>
-        <rdfs:comment>The Somatoform label refers to a category of mental health disorders characterized by physical symptoms that cannot be fully explained by any underlying medical condition, highlighting the complex interaction between mind and body in mental health.</rdfs:comment>
+
+    <!-- http://purl.org/htp#HTP_0000002 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000001"/>
+        <rdfs:comment>A level within the HiTOP model that groups related mental health issues into broad categories, providing a framework for understanding complex symptomatology.</rdfs:comment>
+        <rdfs:label>Spectra</rdfs:label>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="http://purl.org/htp#Internalizing">
-        <rdfs:label>Internalizing</rdfs:label>
-        <rdfs:comment>The Internalizing label refers to a category of mental health disorders characterized by inward-focused symptoms such as anxiety, depression, and withdrawal, reflecting emotional and cognitive distress.</rdfs:comment>
+
+    <!-- http://purl.org/htp#HTP_0000003 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <rdfs:comment>A more specific grouping within a spectrum, representing clusters of symptoms or traits that share common characteristics.</rdfs:comment>
+        <rdfs:label>Subfactor</rdfs:label>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="http://purl.org/htp#ThoughtDisorder">
-        <rdfs:label>Thought Disorder</rdfs:label>
-        <rdfs:comment>Thought Disorder refers to a category of mental health conditions characterized by disorganized thinking, impaired reality testing, and disturbances in the form or content of thought.</rdfs:comment>
+
+    <!-- http://purl.org/htp#HTP_0000004 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <rdfs:comment>A collection of symptoms that often occur together and characterize a particular mental disorder, as identified within the HiTOP framework.</rdfs:comment>
+        <rdfs:label>Syndrome</rdfs:label>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="http://purl.org/htp#Detachment">
-        <rdfs:label>Detachment</rdfs:label>
-        <rdfs:comment>Detachment refers to a psychological state characterized by emotional distance and disengagement from social interactions.</rdfs:comment>
+
+    <!-- http://purl.org/htp#HTP_0000005 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <rdfs:comment>A clinically recognized condition characterized by a specific set of symptoms and behaviors, categorized in the HiTOP model for diagnosis and treatment planning.</rdfs:comment>
+        <rdfs:label>Disorder</rdfs:label>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="http://purl.org/htp#DisinhibitedExternalizing">
-        <rdfs:label>Disinhibited Externalizing</rdfs:label>
-        <rdfs:comment>Disinhibited Externalizing involves behaviors that are impulsive and lacking in social restraint or inhibition.</rdfs:comment>
+
+    <!-- http://purl.org/htp#HTP_0000006 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000004"/>
+        <rdfs:comment>A specific aspect of a Syndrome or subfactor, representing distinct elements of psychological functioning or dysfunction.</rdfs:comment>
+        <rdfs:label>Component</rdfs:label>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="http://purl.org/htp#AntagonisticExternalizing">
-        <rdfs:label>Antagonistic Externalizing</rdfs:label>
-        <rdfs:comment>Antagonistic Externalizing describes behaviors that involve hostility and aggression towards others.</rdfs:comment>
+
+    <!-- http://purl.org/htp#HTP_0000007 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000004"/>
+        <rdfs:comment>A stable characteristic or disposition that influences behavior and thought patterns, considered in the HiTOP model as part of individual differences.</rdfs:comment>
+        <rdfs:label>Trait</rdfs:label>
     </owl:Class>
+    
 
-    <!-- This class encompasses all spectra belonging to the Superspectra category "General Psychopathology." -->
-    <!-- The spectra include Somatoform, Internalizing, Thought Disorder, Detachment, Disinhibited Externalizing, and Antagonistic Externalizing. -->
-    <rdf:Description rdf:about="http://purl.org/htp#GeneralPsychopathology">
-        <rdf:type rdf:resource="http://purl.org/htp#Superspectra"/>
-        <rdfs:label>General Psychopathology</rdfs:label>
-        <rdfs:comment>General Psychopathology refers to the broad, overarching category of mental disorders and psychological symptoms that can manifest across different mental health conditions. It encompasses a wide range of psychological phenomena that are not specific to any single disorder but may contribute to or exacerbate multiple types of mental health issues. This category includes general symptoms and traits that are commonly observed in various psychiatric conditions, such as mood disturbances, anxiety, cognitive dysfunctions, and behavioral problems.</rdfs:comment>
-        <htp:hasSpectra rdf:resource="http://purl.org/htp#Somatoform"/>
-        <htp:hasSpectra rdf:resource="http://purl.org/htp#Internalizing"/>
-        <htp:hasSpectra rdf:resource="http://purl.org/htp#ThoughtDisorder"/>
-        <htp:hasSpectra rdf:resource="http://purl.org/htp#Detachment"/>
-        <htp:hasSpectra rdf:resource="http://purl.org/htp#DisinhibitedExternalizing"/>
-        <htp:hasSpectra rdf:resource="http://purl.org/htp#AntagonisticExternalizing"/>    
-        <htp:futureReleaseInfo>
+
+    <!-- http://purl.org/htp#HTP_0000008 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000006"/>
+        <rdfs:comment>An observable sign or manifestation of a mental disorder, often used to diagnose and classify conditions within the HiTOP framework.</rdfs:comment>
+        <rdfs:label>Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000009 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000009"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000010 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000010"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000011 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000011"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000012 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000012"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000013 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000013"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000014 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000014"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000015 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000015"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000016 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000016"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000017 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000017"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000018 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000018"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000019 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000019"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000020 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000020"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000021 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000021"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000022 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000022"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000023 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000023"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000024 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000024"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000025 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000025"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000026 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000026"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000027 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000027"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000028 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000028"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000029 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000029"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000030 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000030"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000031 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000031"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000032 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000032"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000033 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000033"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000034 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000034"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000035 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000035"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000036 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000036"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000037 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000037"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000038 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000038"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000039 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000039"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000040 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000040"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000041 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000041"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000042 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000042"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000043 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000043"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000044 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000044"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000045 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000045"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000046 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000046"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000047 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000047"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000048 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000048"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000049 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000049"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000050 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000050"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000051 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000051"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000052 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000052"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000053 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000053"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000054 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000054"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000055 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000055"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000056 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000056"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000057 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000057"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000058 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000058"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000059 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000059"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000060 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000060"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000061 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000061"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000062 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000062"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000063 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000063"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000064 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000064"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000065 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000065"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000066 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000066"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000067 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000067"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000068 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000068"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000069 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000069"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000070 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000070"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000071 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000071"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000072 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000072"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000073 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000073"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000074 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000074"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000075 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000075"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000076 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000076"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000077 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000077"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000078 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000078"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000079 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000079"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000080 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000080"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000081 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000081"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000082 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000082"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000083 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000083"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000084 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000084"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000085 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000085"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000086 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000086"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000087 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000087"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000088 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000088"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000089 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000089"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000090 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000090"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000091 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000091"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000092 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000092"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000093 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000093"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000094 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000094"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000095 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000095"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000096 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000096"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000097 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000097"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000098 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000098"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000099 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000099"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000100 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000100"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000101 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000101"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000102 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000102"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000103 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000103"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000104 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000104"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000105 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000105"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000106 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000106"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000107 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000107"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000108 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000108"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000109 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000109"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000110 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000110"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000111 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000111"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000112 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000112"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000113 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000113"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000114 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000114"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000115 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000115"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000116 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000116"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000117 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000117"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000118 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000118"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000119 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000119"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000120 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000120"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000121 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000121"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000122 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000122"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000123 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000123"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000009 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000009">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000001"/>
+        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000010"/>
+        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000011"/>
+        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000012"/>
+        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000013"/>
+        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000014"/>
+        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000010 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000010">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000023"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000024"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000025"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000026"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000027"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000028"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000124"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000125"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000011 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000011">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000016"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000017"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000018"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000019"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000029"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000030"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000031"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000032"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000033"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000034"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000035"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000036"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000037"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000038"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000039"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000012">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000072"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000073"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000074"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000075"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000146"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000147"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000148"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000149"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000150"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000076"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000077"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000078"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000079"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000013">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000149"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000151"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000152"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000053"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000080"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000081"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000082"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000083"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000084"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000085"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000086"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000014">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000021"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000087"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000088"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000089"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000090"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000091"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000092"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000093"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000094"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000015">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000139"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000147"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000152"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000160"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000086"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000115"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000116"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000117"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000118"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000119"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000120"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000121"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000122"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000123"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000016">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000126"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000127"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000128"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000129"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000017">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000130"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000131"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000132"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000018">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000040"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000041"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000042"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000043"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000044"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000045"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000046"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000047"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000048"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000049"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000050"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000133"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000134"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000135"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000136"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000137"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000138"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000019">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000051"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000052"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000053"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000054"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000055"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000056"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000057"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000058"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000059"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000060"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000061"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000062"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000063"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000064"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000065"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000066"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000067"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000068"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000139"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000140"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000141"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000142"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000143"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000020">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000069"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000070"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000071"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000144"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000145"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000021">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000095"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000096"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000097"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000098"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000099"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000100"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000153"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000022">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000101"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000102"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000103"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000104"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000154"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000155"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000156"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000157"/>
+        <hasDisorder rdf:resource="http://purl.org/htp#HTP_0000158"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000105"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000106"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000107"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000108"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000109"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000110"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000111"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000112"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000113"/>
+        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000114"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000023"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000024"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000025 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000025"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000026 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000026"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000027 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000027"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000028 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000028"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000029 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000029"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000030 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000030"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000031 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000031"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000032 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000032"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000033 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000033"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000034 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000034"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000035 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000035"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000036 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000036"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000037 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000037"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000038 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000038"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000039 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000039"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000040 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000040"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000041 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000041"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000042 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000042"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000043 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000043"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000044 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000044"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000045 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000045"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000046 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000046"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000047 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000047"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000048 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000048"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000049 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000049"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000050 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000050"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000051 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000051"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000052 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000052"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000053 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000053"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000054 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000054"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000055 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000055"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000056 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000056"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000057 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000057"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000058 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000058"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000059 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000059"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000060 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000060"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000061 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000061"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000062 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000062"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000063 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000063"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000064 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000064"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000065 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000065"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000066 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000066"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000067 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000067"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000068 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000068"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000069 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000069"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000070 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000070"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000071 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000071"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000072 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000072"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000073 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000073"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000074 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000074"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000075 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000075"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000076 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000076"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000077 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000077"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000078 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000078"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000079 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000079"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000080 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000080"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000081 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000081"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000082 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000082"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000083 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000083"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000084 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000084"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000085 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000085"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000086 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000086"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000087 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000087"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000088 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000088"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000089 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000089"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000090 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000090"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000091 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000091"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000092 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000092"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000093 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000093"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000094 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000094"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000095 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000095"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000096 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000096"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000097 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000097"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000098 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000098"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000099 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000099"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000100 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000100"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000101 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000101"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000102 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000102"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000103 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000103"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000104 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000104"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000105 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000105"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000106 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000106"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000107 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000107"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000108 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000108"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000109 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000109"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000110 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000110"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000111 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000111"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000112 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000112"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000113 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000113"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000114 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000114"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000115 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000115"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000116 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000116"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000117 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000117"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000118 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000118"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000119 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000119"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000120 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000120"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000121 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000121"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000122 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000122"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000123"/>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000124 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000124">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by excessive worry about having a serious illness, despite having no or minimal symptoms.</rdfs:comment>
+        <rdfs:label>Illness Anxiety Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000125 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000125">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder involving one or more somatic symptoms that are distressing or result in significant disruption in daily life, along with excessive thoughts, feelings, or behaviors related to the symptoms.</rdfs:comment>
+        <rdfs:label>Somatic Symptom Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000126 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000126">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by difficulties in achieving or maintaining sexual arousal.</rdfs:comment>
+        <rdfs:label>Arousal Difficulties</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000127 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000127">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by a significantly reduced interest in sexual activity.</rdfs:comment>
+        <rdfs:label>Low Desire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000128 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000128">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by difficulties in achieving orgasm.</rdfs:comment>
+        <rdfs:label>Orgasmic Function</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000129 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000129">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by pain during sexual activity.</rdfs:comment>
+        <rdfs:label>Sexual Pain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000130 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000130">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by an intense fear of gaining weight and a distorted body image, leading to restricted food intake and excessive weight loss.</rdfs:comment>
+        <rdfs:label>Anorexia Nervosa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000131 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000131">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by frequent episodes of consuming large quantities of food, often quickly and to the point of discomfort, accompanied by a sense of loss of control during the binge and feelings of shame or distress.</rdfs:comment>
+        <rdfs:label>Binge Eating Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000132 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000132">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by binge eating followed by purging behaviors, such as vomiting or excessive use of laxatives, to prevent weight gain.</rdfs:comment>
+        <rdfs:label>Bulimia Nervosa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000133 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000133">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by intense fear of being in situations where escape might be difficult.</rdfs:comment>
+        <rdfs:label>Agoraphobia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000134 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000134">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by unwanted repetitive thoughts (obsessions) and/or actions (compulsions).</rdfs:comment>
+        <rdfs:label>Obsessive-Compulsive Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000135 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000135">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by recurrent and unexpected panic attacks.</rdfs:comment>
+        <rdfs:label>Panic Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000136 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000136">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by an intense fear of social situations.</rdfs:comment>
+        <rdfs:label>Social Anxiety Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000137 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000137">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>Excessive and persistent fear of social interactions and situations.</rdfs:comment>
+        <rdfs:label>Social Phobia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000138 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000138">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by intense, irrational fear of specific objects or situations.</rdfs:comment>
+        <rdfs:label>Specific Phobia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000139 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000139">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A personality disorder characterized by unstable moods, behavior, and relationships.</rdfs:comment>
+        <rdfs:label>Borderline Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000140 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000140">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>Chronic low-grade depression lasting for at least two years.</rdfs:comment>
+        <rdfs:label>Dysthymia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000141 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000141">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by excessive, uncontrollable worry about various aspects of life.</rdfs:comment>
+        <rdfs:label>Generalized Anxiety Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000142 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000142">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A mood disorder characterized by persistent feelings of sadness and loss of interest or pleasure in activities.</rdfs:comment>
+        <rdfs:label>Major Depressive Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000143 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000143">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A mental health condition triggered by experiencing or witnessing a traumatic event, leading to flashbacks, nightmares, and severe anxiety.</rdfs:comment>
+        <rdfs:label>Post-Traumatic Stress Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000144 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000144">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A mood disorder characterized by at least one manic episode, often accompanied by depressive episodes.</rdfs:comment>
+        <rdfs:label>Bipolar I Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000145 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000145">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A mood disorder characterized by at least one hypomanic episode and one major depressive episode, but no full manic episodes.</rdfs:comment>
+        <rdfs:label>Bipolar II Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000146 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000146">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by mood disturbances accompanied by psychotic symptoms.</rdfs:comment>
+        <rdfs:label>Mood Disorders with Psychosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000147 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000147">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by pervasive distrust and suspicion of others.</rdfs:comment>
+        <rdfs:label>Paranoid Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000148 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000148">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A spectrum of disorders characterized by disturbances in thought, perception, and behavior.</rdfs:comment>
+        <rdfs:label>Schizophrenia Spectrum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000149 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000149">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by a pervasive pattern of detachment from social relationships and a restricted range of emotional expression.</rdfs:comment>
+        <rdfs:label>Schizoid Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000150 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000150">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by acute discomfort in close relationships and eccentric behavior.</rdfs:comment>
+        <rdfs:label>Schizotypal Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000151 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000151">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation.</rdfs:comment>
+        <rdfs:label>Avoidant Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000152 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000152">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by excessive emotionality and attention-seeking behavior.</rdfs:comment>
+        <rdfs:label>(low) Histrionic Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000153 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000153">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>Disorders characterized by problematic use of substances, including alcohol, marijuana, and other drugs.</rdfs:comment>
+        <rdfs:label>Substance-Related Disorders</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000154 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000154">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by a persistent pattern of disregard for, and violation of, the rights of others.</rdfs:comment>
+        <rdfs:label>Antisocial Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000155 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000155">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by a repetitive and persistent pattern of behavior that violates societal norms and the rights of others.</rdfs:comment>
+        <rdfs:label>Conduct Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000156 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000156">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by recurrent outbursts of anger or violence that are disproportionate to the situation.</rdfs:comment>
+        <rdfs:label>Intermittent Explosive Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000157 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000157">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by a pattern of angry or irritable mood, argumentative or defiant behavior, or vindictiveness.</rdfs:comment>
+        <rdfs:label>Oppositional Defiant Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000158 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000158">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by a persistent pattern of inattention and/or hyperactivity-impulsivity that interferes with functioning or development.</rdfs:comment>
+        <rdfs:label>Attention-Deficit/Hyperactivity Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000159 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000159">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A disorder characterized by excessive emotionality and attention-seeking behavior.</rdfs:comment>
+        <rdfs:label>Histrionic Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HTP_0000160 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000160">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000005"/>
+        <rdfs:comment>A personality disorder characterized by a pervasive pattern of grandiosity, need for admiration, and a lack of empathy.</rdfs:comment>
+        <rdfs:label>Narcissistic Personality Disorder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000009">
+        <futureReleaseInfo>
             Indicates the potential for future inclusion of additional spectra and other related concepts as new developments and insights emerge in the field of general psychopathology.
             Allows for flexible expansion and refinement of the taxonomy to integrate new spectra, subfactors, and related elements to better capture evolving understanding and research findings.
-        </htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>General Psychopathology refers to the broad, overarching category of mental disorders and psychological symptoms that can manifest across different mental health conditions. It encompasses a wide range of psychological phenomena that are not specific to any single disorder but may contribute to or exacerbate multiple types of mental health issues. This category includes general symptoms and traits that are commonly observed in various psychiatric conditions, such as mood disturbances, anxiety, cognitive dysfunctions, and behavioral problems.</rdfs:comment>
+        <rdfs:label>General Psychopathology</rdfs:label>
     </rdf:Description>
-
-    <!-- This spectra includes all components and disorders related to the "Somatoform" category. -->
-    <!-- The components are Conversion, Somatization, Malaise, Head Pain, Gastrointestinal, and Cognitive. The associated disorders are Illness Anxiety Disorder and Somatic Symptom Disorder. -->
-    <rdf:Description rdf:about="http://purl.org/htp#Somatoform">
-        <rdf:type rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:label>Somatoform</rdfs:label>
-        <rdfs:comment>The Somatoform label refers to a category of mental health disorders characterized by physical symptoms that cannot be fully explained by any underlying medical condition, highlighting the complex interaction between mind and body in mental health.</rdfs:comment>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Conversion"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Somatization"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Malaise"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#HeadPain"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Gastrointestinal"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Cognitive"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#IllnessAnxietyDisorder"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SomaticSymptomDisorder"/>
-        <htp:futureReleaseInfo>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000010">
+        <futureReleaseInfo>
             This spectrum may include future expansions or modifications based on emerging research or changes in the understanding of somatoform disorders. 
             It is designed to adapt to new developments by allowing the addition of new related spectra or concepts as needed.
-        </htp:futureReleaseInfo>
-    </rdf:Description>    
-
-    <!-- This spectra includes all subfactors and traits related to the "Internalizing" category. -->
-    <!-- The subfactors are Sexual Problems, Eating Pathology, Fear, Distress, and Mania. The associated traits are Anxiousness, Emotional Lability, Hostility, Perseveration, Restricted Affectivity, Separation Insecurity, Submissiveness, Identity Problems, Negative Relationships, Fragility, Ineptitude, and Invulnerability. -->
-    <rdf:Description rdf:about="http://purl.org/htp#Internalizing">
-        <rdf:type rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:label>Internalizing</rdfs:label>
-        <rdfs:comment>The Internalizing label refers to a category of mental health disorders characterized by inward-focused symptoms such as anxiety, depression, and withdrawal, reflecting emotional and cognitive distress.</rdfs:comment>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#SexualProblems"/>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#EatingPathology"/>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#Fear"/>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#Distress"/>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#Mania"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Anxiousness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#EmotionalLability"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Hostility"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Perseveration"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#RestrictedAffectivity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#SeparationInsecurity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Submissiveness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#IdentityProblems"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#NegativeRelationships"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Fragility"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Ineptitude"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Invulnerability"/>
-        <htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>The Somatoform label refers to a category of mental health disorders characterized by physical symptoms that cannot be fully explained by any underlying medical condition, highlighting the complex interaction between mind and body in mental health.</rdfs:comment>
+        <rdfs:label>Somatoform</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000011">
+        <futureReleaseInfo>
             This spectrum can accommodate future additions or modifications based on emerging research or evolving understanding of internalizing disorders. 
             It is designed to integrate new related spectra or concepts as needed, reflecting the ongoing developments in the field.
-        </htp:futureReleaseInfo>
-    </rdf:Description>    
-
-    <!-- This spectra category lists all subfactors, components, traits, and disorders associated with the "Thought Disorder" spectrum. -->
-    <!-- The subfactors include Mania. The components are Psychotic, Disorganized, Inexpressivity, and Avolition. The traits are Eccentricity, Cognitive Perceptual Dysregulation, Unusual Beliefs and Experiences, and Fantasy Proneness. The disorders associated with this spectrum are Mood Disorders with Psychosis, Paranoid Personality Disorder (PD), Schizophrenia Spectrum, Schizoid Personality Disorder (PD), and Schizotypal Personality Disorder (PD). -->
-    <rdf:Description rdf:about="http://purl.org/htp#ThoughtDisorder">
-        <rdf:type rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:label>Thought Disorder</rdfs:label>
-        <rdfs:comment>Thought Disorder refers to a category of mental health conditions characterized by disorganized thinking, impaired reality testing, and disturbances in the form or content of thought.</rdfs:comment>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#Mania"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Psychotic"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Disorganized"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Inexpressivity"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Avolition"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Eccentricity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#CognitivePerceptualDysregulation"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#UnusualBeliefsAndExperiences"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#FantasyProneness"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#MoodDisordersWithPsychosis"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#ParanoidPD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SchizophreniaSpectrum"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SchizoidPD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SchizotypalPD"/>
-        <htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>The Internalizing label refers to a category of mental health disorders characterized by inward-focused symptoms such as anxiety, depression, and withdrawal, reflecting emotional and cognitive distress.</rdfs:comment>
+        <rdfs:label>Internalizing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000012">
+        <futureReleaseInfo>
             This spectrum allows for the integration of additional related spectra or concepts as new insights into thought disorders emerge. 
             It is structured to adapt to evolving understandings and classifications within the domain of cognitive and thought-related disturbances.
-        </htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>Thought Disorder refers to a category of mental health conditions characterized by disorganized thinking, impaired reality testing, and disturbances in the form or content of thought.</rdfs:comment>
+        <rdfs:label>Thought Disorder</rdfs:label>
     </rdf:Description>
-
-    <!-- This spectra category lists all traits and disorders associated with the "Detachment" spectrum. -->
-    <!-- The traits include Anhedonia, Depressivity, Intimacy Avoidance, Suspiciousness, Withdrawal, Interpersonal Passivity, Disaffiliativeness, and Attention Seeking. The disorders associated with this spectrum are Avoidant Personality Disorder (PD), Histrionic Personality Disorder (PD), and Schizoid Personality Disorder (PD). -->
-    <rdf:Description rdf:about="http://purl.org/htp#Detachment">
-        <rdf:type rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:label>Detachment</rdfs:label>
-        <rdfs:comment>Detachment refers to a psychological state characterized by emotional distance and disengagement from social interactions.</rdfs:comment>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Anhedonia"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Depressivity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#IntimacyAvoidance"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Suspiciousness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Withdrawal"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#InterpersonalPassivity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Disaffiliativeness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#AttentionSeeking"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#AvoidantPD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#HistrionicPD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SchizoidPD"/>
-        <htp:futureReleaseInfo>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000013">
+        <futureReleaseInfo>
             This spectrum is designed to accommodate the inclusion of new related spectra or additional concepts as understanding of detachment and related psychological phenomena evolves. 
             It supports updates and extensions to reflect advances in research and shifts in diagnostic criteria.
-        </htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>Detachment refers to a psychological state characterized by emotional distance and disengagement from social interactions.</rdfs:comment>
+        <rdfs:label>Detachment</rdfs:label>
     </rdf:Description>
-
-    <!-- This spectra category lists all traits and subfactors associated with the "Disinhibited Externalizing" spectrum. -->
-    <!-- The traits include Problematic Impulsivity, Irresponsibility, Theft, Distractibility, Risk-Taking, Rigid Perfectionism, Ruminative Deliberation, and Workaholism. The subfactors associated with this spectrum are Harmful Substance Abuse and Antisocial Behavior. -->
-    <rdf:Description rdf:about="http://purl.org/htp#DisinhibitedExternalizing">
-        <rdf:type rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:label>Disinhibited Externalizing</rdfs:label>
-        <rdfs:comment>Disinhibited Externalizing involves behaviors that are impulsive and lacking in social restraint or inhibition.</rdfs:comment>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#HarmfulSubstanceAbuse"/>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#AntisocialBehavior"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#ProblematicImpulsivity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Irresponsibility"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Theft"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Distractibility"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#RiskTaking"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#RigidPerfectionism"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#RuminativeDeliberation"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Workaholism"/>
-        <htp:futureReleaseInfo>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000014">
+        <futureReleaseInfo>
             This spectrum is designed to be adaptable to the addition of new spectra or related concepts as research on disinhibited externalizing behaviors evolves. 
             It allows for updates and expansions to incorporate emerging findings and shifts in diagnostic frameworks.
-        </htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>Disinhibited Externalizing involves behaviors that are impulsive and lacking in social restraint or inhibition.</rdfs:comment>
+        <rdfs:label>Disinhibited Externalizing</rdfs:label>
     </rdf:Description>
-
-    <!-- This spectra category lists all traits and subfactors associated with the "Antagonistic Externalizing" spectrum. -->
-    <!-- The traits include Attention Seeking, Callousness, Deceitfulness, Grandiosity, Manipulativeness, Rudeness, Egocentricity, Dominance, Flirtatiousness, and Timorousness. The subfactor associated with this spectrum is Antisocial Behavior. -->
-    <!-- The disorders linked to this spectrum include Borderline Personality Disorder, Histrionic Personality Disorder, Narcissistic Personality Disorder, and Paranoid Personality Disorder. -->
-    <rdf:Description rdf:about="http://purl.org/htp#AntagonisticExternalizing">
-        <rdf:type rdf:resource="http://purl.org/htp#Spectra"/>
-        <rdfs:label>Antagonistic Externalizing</rdfs:label>
-        <rdfs:comment>Antagonistic Externalizing describes behaviors that involve hostility and aggression towards others.</rdfs:comment>
-        <htp:hasSubfactor rdf:resource="http://purl.org/htp#AntisocialBehavior"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#AttentionSeeking"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Callousness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Deceitfulness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Grandiosity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Manipulativeness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Rudeness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Egocentricity"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Dominance"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Flirtatiousness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Timorousness"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#BorderlinePD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#HistrionicPD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#NarcissisticPD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#ParanoidPD"/>
-        <htp:futureReleaseInfo>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000015">
+        <futureReleaseInfo>
             This spectrum is designed to accommodate potential future modifications and expansions. 
             It supports the integration of new spectra or related concepts to reflect advancements in understanding antagonistic externalizing behaviors and their classification.
-        </htp:futureReleaseInfo>
+        </futureReleaseInfo>
+        <rdfs:comment>Antagonistic Externalizing describes behaviors that involve hostility and aggression towards others.</rdfs:comment>
+        <rdfs:label>Antagonistic Externalizing</rdfs:label>
     </rdf:Description>
-
-    <!-- These classes represent specific subfactors within the spectra. -->
-    <!-- This categorization helps in understanding distinct aspects of psychological phenomena within each spectrum. -->
-    <owl:Class rdf:about="http://purl.org/htp#SexualProblems">
-        <rdfs:label>Sexual Problems</rdfs:label>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000016">
+        <futureReleaseInfo>
+            This subfactor is designed to be adaptable to future updates and expansions. 
+            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
+        </futureReleaseInfo>
         <rdfs:comment>Sexual Problems encompass difficulties and dysfunctions related to sexual health and behavior.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#EatingPathology">
-        <rdfs:label>Eating Pathology</rdfs:label>
+        <rdfs:label>Sexual Problems</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000017">
+        <futureReleaseInfo>
+            This subfactor is designed to be adaptable to future updates and expansions. 
+            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
+        </futureReleaseInfo>
         <rdfs:comment>Eating Pathology includes disorders and maladaptive behaviors related to eating and body image.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Fear">
-        <rdfs:label>Fear</rdfs:label>
+        <rdfs:label>Eating Pathology</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000018">
+        <futureReleaseInfo>
+            This subfactor is designed to be adaptable to future updates and expansions. 
+            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
+        </futureReleaseInfo>
         <rdfs:comment>Fear refers to an emotional response to perceived threats or danger.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Distress">
-        <rdfs:label>Distress</rdfs:label>
+        <rdfs:label>Fear</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000019">
+        <futureReleaseInfo>
+            This subfactor is designed to be adaptable to future updates and expansions. 
+            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
+        </futureReleaseInfo>
         <rdfs:comment>Distress involves significant emotional suffering or discomfort.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Mania">
-        <rdfs:label>Mania</rdfs:label>
+        <rdfs:label>Distress</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000020">
+        <futureReleaseInfo>
+            This subfactor is designed to be adaptable to future updates and expansions. 
+            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
+        </futureReleaseInfo>
         <rdfs:comment>Mania is characterized by elevated mood, increased activity, and impulsive behavior.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#HarmfulSubstanceAbuse">
-        <rdfs:label>Harmful Substance Abuse</rdfs:label>
+        <rdfs:label>Mania</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000021">
+        <futureReleaseInfo>
+            This subfactor is designed to be adaptable to future updates and expansions. 
+            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
+        </futureReleaseInfo>
         <rdfs:comment>Harmful Substance Abuse refers to the excessive use of substances that causes significant harm or impairment.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#AntisocialBehavior">
-    <rdfs:label>Antisocial Behavior</rdfs:label>
+        <rdfs:label>Harmful Substance Abuse</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000022">
+        <futureReleaseInfo>
+            This subfactor is designed to be adaptable to future updates and expansions. 
+            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
+        </futureReleaseInfo>
         <rdfs:comment>Antisocial Behavior involves actions that violate societal norms and the rights of others.</rdfs:comment>
-    </owl:Class>
-
-    <!-- This subfactor category represents difficulties and dysfunctions related to sexual health and behavior. -->
-    <!-- It falls under the Internalizing spectrum and includes disorders like Arousal Difficulties, Low Desire, Orgasmic Function, and Sexual Pain. -->
-    <rdf:Description rdf:about="http://purl.org/htp#SexualProblems">
-        <rdf:type rdf:resource="http://purl.org/htp#Subfactor"/>
-        <rdfs:label>Sexual Problems</rdfs:label>
-        <rdfs:comment>Sexual Problems encompass difficulties and dysfunctions related to sexual health and behavior.</rdfs:comment>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#ArousalDifficulties"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#LowDesire"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#OrgasmicFunction"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SexualPain"/>
-        <htp:futureReleaseInfo>
-            This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
-        </htp:futureReleaseInfo>
-    </rdf:Description>
-
-    <!-- This subfactor category represents disorders and maladaptive behaviors related to eating and body image. -->
-    <!-- It falls under the Internalizing spectrum and includes disorders such as Anorexia Nervosa, Binge Eating Disorder, and Bulimia Nervosa. -->
-    <rdf:Description rdf:about="http://purl.org/htp#EatingPathology">
-        <rdf:type rdf:resource="http://purl.org/htp#Subfactor"/>
-        <rdfs:label>Eating Pathology</rdfs:label>
-        <rdfs:comment>Eating Pathology includes disorders and maladaptive behaviors related to eating and body image.</rdfs:comment>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#AnorexiaNervosa"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#BingeEatingDisorder"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#BulimiaNervosa"/>
-        <htp:futureReleaseInfo>
-            This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
-        </htp:futureReleaseInfo>        
-    </rdf:Description>
-
-    <!-- This subfactor category represents emotional responses to perceived threats or danger. -->
-    <!-- It falls under the Internalizing spectrum and includes components like Interactive Anxiety, Performance Anxiety, and various phobias. -->
-    <rdf:Description rdf:about="http://purl.org/htp#Fear">
-        <rdf:type rdf:resource="http://purl.org/htp#Subfactor"/>
-        <rdfs:label>Fear</rdfs:label>
-        <rdfs:comment>Fear refers to an emotional response to perceived threats or danger.</rdfs:comment>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#InteractiveAnxiety"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#PerformanceAnxiety"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#PublicPlaces"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#EnclosedSpaces"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#AnimalPhobia"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#SituationalPhobia"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Blood-injection-injury"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#PhysiologicalPanic"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Cleaning"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Rituals"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Checking"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#Agoraphobia"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#OCD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#PanicDisorder"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SAD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SocialPhobia"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SpecificPhobia"/>
-        <htp:futureReleaseInfo>
-            This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
-        </htp:futureReleaseInfo>        
-    </rdf:Description>
-
-    <!-- This subfactor category represents significant emotional suffering or discomfort. -->
-    <!-- It falls under the Internalizing spectrum and includes components like Dysphoria, Anhedonia, and various symptoms related to distress. -->
-    <rdf:Description rdf:about="http://purl.org/htp#Distress">
-        <rdf:type rdf:resource="http://purl.org/htp#Subfactor"/>
-        <rdfs:label>Distress</rdfs:label>
-        <rdfs:comment>Distress involves significant emotional suffering or discomfort.</rdfs:comment>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Dysphoria"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Lassitude"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Anhedonia"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Insomnia"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Suicidality"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Agitation"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Retardation"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#AppetiteLoss"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#AppetiteGain"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Wellbeing"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#GADSymptoms"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#ReExperiencing"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Avoidance"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Hyperarousal"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Numbing"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Dissociation"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Irritability"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#PureObsessions"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#BorderlinePD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#Dysthymia"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#GAD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#MDD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#PTSD"/>
-        <htp:futureReleaseInfo>
-            This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
-        </htp:futureReleaseInfo>        
-    </rdf:Description> 
-
-    <!-- This subfactor category represents elevated mood, increased activity, and impulsive behavior. -->
-    <!-- It falls under the Internalizing spectrum and includes components like Euphoric Activation and Reckless Over-Confidence. -->
-    <rdf:Description rdf:about="http://purl.org/htp#Mania">
-        <rdf:type rdf:resource="http://purl.org/htp#Subfactor"/>
-        <rdfs:label>Mania</rdfs:label>
-        <rdfs:comment>Mania is characterized by elevated mood, increased activity, and impulsive behavior.</rdfs:comment>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#EuphoricActivation"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#HyperactiveCognition"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#RecklessOverConfidence"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#BipolarI"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#BipolarII"/>
-        <htp:futureReleaseInfo>
-            This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
-        </htp:futureReleaseInfo>        
-    </rdf:Description>
-
-    <!-- This subfactor category represents the excessive use of substances that causes significant harm or impairment. -->
-    <!-- It includes components related to alcohol, marijuana, and drug use, as well as associated problems and disorders. -->
-    <rdf:Description rdf:about="http://purl.org/htp#HarmfulSubstanceAbuse">
-        <rdf:type rdf:resource="http://purl.org/htp#Subfactor"/>
-        <rdfs:label>Harmful Substance Abuse</rdfs:label>
-        <rdfs:comment>Harmful Substance Abuse refers to the excessive use of substances that causes significant harm or impairment.</rdfs:comment>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#AlcoholUse"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#AlcoholProblems"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#MarijuanaUse"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#MarijuanaProblems"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#DrugUse"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#DrugProblems"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#SubstanceRelatedDisorders"/>
-        <htp:futureReleaseInfo>
-            This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
-        </htp:futureReleaseInfo>        
-    </rdf:Description>
-
-    <!-- This subfactor category represents actions that violate societal norms and the rights of others. -->
-    <!-- It includes components related to various forms of aggression, fraud, and traits associated with antisocial behavior. -->
-    <rdf:Description rdf:about="http://purl.org/htp#AntisocialBehavior">
-        <rdf:type rdf:resource="http://purl.org/htp#Subfactor"/>
         <rdfs:label>Antisocial Behavior</rdfs:label>
-        <rdfs:comment>Antisocial Behavior involves actions that violate societal norms and the rights of others.</rdfs:comment>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#PhysicalAggression"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#DestructiveAggression"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#RelationalAggression"/>
-        <htp:hasComponent rdf:resource="http://purl.org/htp#Fraud"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#ImpatientUrgency"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#LowPlanfulControl"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#LowDependability"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Alienation"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#BoredomProneness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#BlameExternalization"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#LowHonesty"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#Rebelliousness"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#LowEmpathy"/>
-        <htp:hasTrait rdf:resource="http://purl.org/htp#ExcitementSeeking"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#AntisocialPD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#ConductDisorder"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#IED"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#ODD"/>
-        <htp:hasDisorder rdf:resource="http://purl.org/htp#ADHD"/>
-        <htp:futureReleaseInfo>
-            This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.
-        </htp:futureReleaseInfo>        
     </rdf:Description>
-
-    <!-- These classes represent specific components that contribute to various psychological phenomena or conditions. -->
-    <!-- They include distinct aspects and manifestations relevant to understanding and diagnosing mental health issues. -->
-    <owl:Class rdf:about="http://purl.org/htp#Conversion">
-        <rdfs:label>Conversion</rdfs:label>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000023">
         <rdfs:comment>A component related to conversion disorders where psychological distress is expressed as physical symptoms.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Somatization">
-        <rdfs:label>Somatization</rdfs:label>
+        <rdfs:label>Conversion</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000024">
         <rdfs:comment>A component involving the expression of psychological distress through physical symptoms.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Malaise">
-        <rdfs:label>Malaise</rdfs:label>
+        <rdfs:label>Somatization</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000025">
         <rdfs:comment>A component related to general discomfort or unease.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#HeadPain">
-        <rdfs:label>Head Pain</rdfs:label>
+        <rdfs:label>Malaise</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000026">
         <rdfs:comment>A component related to headaches or other types of head pain.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Gastrointestinal">
-        <rdfs:label>Gastrointestinal</rdfs:label>
+        <rdfs:label>Head Pain</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000027">
         <rdfs:comment>A component related to gastrointestinal symptoms and disorders.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Cognitive">
-        <rdfs:label>Cognitive</rdfs:label>
+        <rdfs:label>Gastrointestinal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000028">
         <rdfs:comment>A component related to cognitive symptoms and dysfunctions.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Psychotic">
-        <rdfs:label>Psychotic</rdfs:label>
-        <rdfs:comment>A component characterized by symptoms of psychosis.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Disorganized">
-        <rdfs:label>Disorganized</rdfs:label>
-        <rdfs:comment>A component characterized by disorganized thinking and behavior.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Inexpressivity">
-        <rdfs:label>Inexpressivity</rdfs:label>
-        <rdfs:comment>A component characterized by a lack of emotional expression.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Avolition">
-        <rdfs:label>Avolition</rdfs:label>
-        <rdfs:comment>A component characterized by a lack of motivation to initiate and sustain purposeful activities.</rdfs:comment>
-    </owl:Class>
-    <owl:Class rdf:about="http://purl.org/htp#InteractiveAnxiety">
-        <rdfs:label>Interactive Anxiety</rdfs:label>
-        <rdfs:comment>Anxiety experienced in social interactions and group settings.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#PerformanceAnxiety">
-        <rdfs:label>Performance Anxiety</rdfs:label>
-        <rdfs:comment>Anxiety related to performing tasks or activities, often in public or under observation.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#PublicPlaces">
-        <rdfs:label>Public Places</rdfs:label>
-        <rdfs:comment>Fear or anxiety associated with being in public spaces.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#EnclosedSpaces">
-        <rdfs:label>Enclosed Spaces</rdfs:label>
-        <rdfs:comment>Fear or anxiety related to confined or small spaces.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#AnimalPhobia">
-        <rdfs:label>Animal Phobia</rdfs:label>
-        <rdfs:comment>Fear or anxiety related to animals.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#SituationalPhobia">
-        <rdfs:label>Situational Phobia</rdfs:label>
-        <rdfs:comment>Fear or anxiety related to specific situations or environments.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Blood-injection-injury">
-        <rdfs:label>Blood-Injection-Injury Phobia</rdfs:label>
-        <rdfs:comment>Fear or anxiety related to blood, injections, or injuries.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#PhysiologicalPanic">
-        <rdfs:label>Physiological Panic</rdfs:label>
-        <rdfs:comment>Panic attacks characterized by physiological symptoms such as rapid heartbeat and sweating.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Cleaning">
-        <rdfs:label>Cleaning</rdfs:label>
-        <rdfs:comment>Compulsive behaviors related to cleaning or hygiene.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Rituals">
-        <rdfs:label>Rituals</rdfs:label>
-        <rdfs:comment>Compulsive rituals or behaviors performed in a specific manner.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Checking">
-        <rdfs:label>Checking</rdfs:label>
-        <rdfs:comment>Compulsive checking behaviors, such as repeatedly checking locks or appliances.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Dysphoria">
-        <rdfs:label>Dysphoria</rdfs:label>
-        <rdfs:comment>A state of generalized unhappiness or dissatisfaction.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Lassitude">
-        <rdfs:label>Lassitude</rdfs:label>
-        <rdfs:comment>A state of physical or mental weariness and lack of energy.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Anhedonia">
-        <rdfs:label>Anhedonia</rdfs:label>
-        <rdfs:comment>The inability to feel pleasure or interest in activities that are normally enjoyable.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Insomnia">
-        <rdfs:label>Insomnia</rdfs:label>
-        <rdfs:comment>Difficulty falling asleep or staying asleep, or waking up too early and not being able to go back to sleep.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Suicidality">
-        <rdfs:label>Suicidality</rdfs:label>
-        <rdfs:comment>The presence of thoughts or behaviors related to suicide.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Agitation">
-        <rdfs:label>Agitation</rdfs:label>
-        <rdfs:comment>State of being overly excited or disturbed, often resulting in restlessness or erratic behavior.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Retardation">
-        <rdfs:label>Retardation</rdfs:label>
-        <rdfs:comment>Slowed cognitive and physical processes, including thinking, speaking, and moving.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#AppetiteLoss">
-        <rdfs:label>Appetite Loss</rdfs:label>
-        <rdfs:comment>Reduction or loss of desire to eat, which can lead to weight loss.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#AppetiteGain">
-        <rdfs:label>Appetite Gain</rdfs:label>
-        <rdfs:comment>Increased desire to eat, which can lead to weight gain.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Wellbeing">
-        <rdfs:label>Wellbeing</rdfs:label>
-        <rdfs:comment>A positive state of mental and physical health, encompassing feelings of happiness and contentment.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#GADSymptoms">
-        <rdfs:label>GAD Symptoms</rdfs:label>
-        <rdfs:comment>Symptoms associated with Generalized Anxiety Disorder, including persistent and excessive worry about various aspects of life.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#ReExperiencing">
-        <rdfs:label>Re-Experiencing</rdfs:label>
-        <rdfs:comment>Re-living traumatic events through flashbacks, intrusive memories, or nightmares.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Avoidance">
-        <rdfs:label>Avoidance</rdfs:label>
-        <rdfs:comment>Efforts to avoid reminders or situations that are associated with traumatic experiences or stress.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Hyperarousal">
-        <rdfs:label>Hyperarousal</rdfs:label>
-        <rdfs:comment>Increased physiological arousal, including symptoms such as hypervigilance, irritability, and difficulty sleeping.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Numbing">
-        <rdfs:label>Numbing</rdfs:label>
-        <rdfs:comment>Emotional numbness or detachment from feelings as a response to overwhelming stress or trauma.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Dissociation">
-        <rdfs:label>Dissociation</rdfs:label>
-        <rdfs:comment>A mental process used to cope with stress or trauma, leading to a sense of detachment from one's surroundings or self.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Irritability">
-        <rdfs:label>Irritability</rdfs:label>
-        <rdfs:comment>State of being easily annoyed or angered, often with a low tolerance for frustration.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#PureObsessions">
-        <rdfs:label>Pure Obsessions</rdfs:label>
-        <rdfs:comment>Recurrent and persistent intrusive thoughts that cause significant distress, without accompanying compulsive behaviors.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#EuphoricActivation">
-        <rdfs:label>Euphoric Activation</rdfs:label>
-        <rdfs:comment>A state of heightened mood and increased energy, often associated with mania or hypomania.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#HyperactiveCognition">
-        <rdfs:label>Hyperactive Cognition</rdfs:label>
-        <rdfs:comment>Increased cognitive activity, often characterized by racing thoughts and distractibility.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#RecklessOverConfidence">
-        <rdfs:label>Reckless Over-Confidence</rdfs:label>
-        <rdfs:comment>Excessive self-confidence leading to risky or impulsive behavior, often seen in manic episodes.</rdfs:comment>
-    </owl:Class>
-  
-    <owl:Class rdf:about="http://purl.org/htp#AlcoholUse">
-        <rdfs:label>Alcohol Use</rdfs:label>
-        <rdfs:comment>The consumption of alcoholic beverages, which may lead to problematic use.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#AlcoholProblems">
-        <rdfs:label>Alcohol Problems</rdfs:label>
-        <rdfs:comment>Issues related to the use of alcohol, including dependence and abuse.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#MarijuanaUse">
-        <rdfs:label>Marijuana Use</rdfs:label>
-        <rdfs:comment>The consumption of marijuana, which may lead to problematic use.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#MarijuanaProblems">
-        <rdfs:label>Marijuana Problems</rdfs:label>
-        <rdfs:comment>Issues related to the use of marijuana, including dependence and abuse.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#DrugUse">
-        <rdfs:label>Drug Use</rdfs:label>
-        <rdfs:comment>The consumption of illicit or prescription drugs, which may lead to problematic use.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#DrugProblems">
-        <rdfs:label>Drug Problems</rdfs:label>
-        <rdfs:comment>Issues related to the use of drugs, including dependence and abuse.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#PhysicalAggression">
-        <rdfs:label>Physical Aggression</rdfs:label>
-        <rdfs:comment>Aggression involving physical acts of violence towards others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#DestructiveAggression">
-        <rdfs:label>Destructive Aggression</rdfs:label>
-        <rdfs:comment>Aggression that results in damage to property or the environment.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#RelationalAggression">
-        <rdfs:label>Relational Aggression</rdfs:label>
-        <rdfs:comment>Aggression that harms others through manipulation of social relationships.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Fraud">
-        <rdfs:label>Fraud</rdfs:label>
-        <rdfs:comment>Deceptive behavior intended to secure unfair or unlawful gain.</rdfs:comment>
-    </owl:Class>
-
-    <!-- These classes represent specific traits that characterize individual differences in psychological functioning. -->
-    <!-- They include attributes and tendencies that influence behavior and emotional responses. -->
-    <owl:Class rdf:about="http://purl.org/htp#Anxiousness">
-        <rdfs:label>Anxiousness</rdfs:label>
+        <rdfs:label>Cognitive</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000029">
         <rdfs:comment>A trait characterized by a tendency to experience anxiety or nervousness.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#EmotionalLability">
-        <rdfs:label>Emotional Lability</rdfs:label>
+        <rdfs:label>Anxiousness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000030">
         <rdfs:comment>A trait characterized by rapid and intense emotional changes.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Hostility">
-        <rdfs:label>Hostility</rdfs:label>
+        <rdfs:label>Emotional lability</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000031">
         <rdfs:comment>A trait characterized by a tendency toward aggression or antagonism.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Perseveration">
-        <rdfs:label>Perseveration</rdfs:label>
+        <rdfs:label>Hostility</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000032">
         <rdfs:comment>A trait characterized by the repetition of a particular response despite the absence or cessation of a stimulus.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#RestrictedAffectivity">
-        <rdfs:label>Restricted Affectivity</rdfs:label>
+        <rdfs:label>Perseveration</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000033">
         <rdfs:comment>A trait characterized by limited or constricted emotional expression.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#SeparationInsecurity">
-        <rdfs:label>Separation Insecurity</rdfs:label>
+        <rdfs:label>(low) Restricted affectivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000034">
         <rdfs:comment>A trait characterized by anxiety and insecurity in response to separation from significant others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Submissiveness">
-        <rdfs:label>Submissiveness</rdfs:label>
+        <rdfs:label>Separation insecurity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000035">
         <rdfs:comment>A trait characterized by a tendency to submit to others and avoid asserting oneself.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#IdentityProblems">
-        <rdfs:label>Identity Problems</rdfs:label>
+        <rdfs:label>Submissiveness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000036">
         <rdfs:comment>A trait characterized by difficulties in forming or maintaining a stable sense of self.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#NegativeRelationships">
-        <rdfs:label>Negative Relationships</rdfs:label>
-        <rdfs:comment>A trait characterized by a tendency to engage in relationships that are harmful or unsatisfactory.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Fragility">
-        <rdfs:label>Fragility</rdfs:label>
+        <rdfs:label>Identity problems</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000037">
         <rdfs:comment>A trait characterized by a lack of resilience and a tendency to be easily hurt or affected by stress.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Ineptitude">
-        <rdfs:label>Ineptitude</rdfs:label>
+        <rdfs:comment>A trait characterized by a tendency to engage in relationships that are harmful or unsatisfactory.</rdfs:comment>
+        <rdfs:label>Fragility</rdfs:label>
+        <rdfs:label>Negative Relationships</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000038">
         <rdfs:comment>A trait characterized by a lack of skill or competence.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Invulnerability">
-        <rdfs:label>Invulnerability</rdfs:label>
+        <rdfs:label>Ineptitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000039">
         <rdfs:comment>A trait characterized by a perception of being immune to harm or negative effects.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Eccentricity">
-        <rdfs:label>Eccentricity</rdfs:label>
-        <rdfs:comment>A trait characterized by unconventional or peculiar behavior.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#CognitivePerceptualDysregulation">
-        <rdfs:label>Cognitive Perceptual Dysregulation</rdfs:label>
-        <rdfs:comment>A trait characterized by disturbances in cognition and perception.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#UnusualBeliefsAndExperiences">
-        <rdfs:label>Unusual Beliefs and Experiences</rdfs:label>
-        <rdfs:comment>A trait characterized by the presence of atypical beliefs and experiences.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#FantasyProneness">
-        <rdfs:label>Fantasy Proneness</rdfs:label>
-        <rdfs:comment>A trait characterized by a tendency to engage in vivid and complex fantasies.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Anhedonia">
-        <rdfs:label>Anhedonia</rdfs:label>
+        <rdfs:label>(low) Invulnerability</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000040">
+        <rdfs:comment>Anxiety experienced in social interactions and group settings.</rdfs:comment>
+        <rdfs:label>Interactive anxiety</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000041">
+        <rdfs:comment>Anxiety related to performing tasks or activities, often in public or under observation.</rdfs:comment>
+        <rdfs:label>Performance anxiety</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000042">
+        <rdfs:comment>Fear or anxiety associated with being in public spaces.</rdfs:comment>
+        <rdfs:label>Public places</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000043">
+        <rdfs:comment>Fear or anxiety related to confined or small spaces.</rdfs:comment>
+        <rdfs:label>Enclosed spaces</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000044">
+        <rdfs:comment>Fear or anxiety related to animals.</rdfs:comment>
+        <rdfs:label>Animal phobia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000045">
+        <rdfs:comment>Fear or anxiety related to specific situations or environments.</rdfs:comment>
+        <rdfs:label>Situational phobia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000046">
+        <rdfs:comment>Fear or anxiety related to blood, injections, or injuries.</rdfs:comment>
+        <rdfs:label>Blood-injection-injury</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000047">
+        <rdfs:comment>Panic attacks characterized by physiological symptoms such as rapid heartbeat and sweating.</rdfs:comment>
+        <rdfs:label>Physiological panic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000048">
+        <rdfs:comment>Compulsive behaviors related to cleaning or hygiene.</rdfs:comment>
+        <rdfs:label>Cleaning</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000049">
+        <rdfs:comment>Compulsive rituals or behaviors performed in a specific manner.</rdfs:comment>
+        <rdfs:label>Rituals</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000050">
+        <rdfs:comment>Compulsive checking behaviors, such as repeatedly checking locks or appliances.</rdfs:comment>
+        <rdfs:label>Checking</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000051">
+        <rdfs:comment>A state of generalized unhappiness or dissatisfaction.</rdfs:comment>
+        <rdfs:label>Dysphoria</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000052">
+        <rdfs:comment>A state of physical or mental weariness and lack of energy.</rdfs:comment>
+        <rdfs:label>Lassitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000053">
         <rdfs:comment>A trait characterized by the loss of interest or pleasure in activities that are usually enjoyable.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Depressivity">
-        <rdfs:label>Depressivity</rdfs:label>
+        <rdfs:comment>The inability to feel pleasure or interest in activities that are normally enjoyable.</rdfs:comment>
+        <rdfs:label>Anhedonia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000054">
+        <rdfs:comment>Difficulty falling asleep or staying asleep, or waking up too early and not being able to go back to sleep.</rdfs:comment>
+        <rdfs:label>Insomnia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000055">
+        <rdfs:comment>The presence of thoughts or behaviors related to suicide.</rdfs:comment>
+        <rdfs:label>Suicidality</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000056">
+        <rdfs:comment>State of being overly excited or disturbed, often resulting in restlessness or erratic behavior.</rdfs:comment>
+        <rdfs:label>Agitation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000057">
+        <rdfs:comment>Slowed cognitive and physical processes, including thinking, speaking, and moving.</rdfs:comment>
+        <rdfs:label>Retardation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000058">
+        <rdfs:comment>Reduction or loss of desire to eat, which can lead to weight loss.</rdfs:comment>
+        <rdfs:label>Appetite loss</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000059">
+        <rdfs:comment>Increased desire to eat, which can lead to weight gain.</rdfs:comment>
+        <rdfs:label>Appetite gain</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000060">
+        <rdfs:comment>A positive state of mental and physical health, encompassing feelings of happiness and contentment.</rdfs:comment>
+        <rdfs:label>(low) Wellbeing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000061">
+        <rdfs:comment>Symptoms associated with Generalized Anxiety Disorder, including persistent and excessive worry about various aspects of life.</rdfs:comment>
+        <rdfs:label>GAD Symptoms</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000062">
+        <rdfs:comment>Re-living traumatic events through flashbacks, intrusive memories, or nightmares.</rdfs:comment>
+        <rdfs:label>Re-experiencing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000063">
+        <rdfs:comment>Efforts to avoid reminders or situations that are associated with traumatic experiences or stress.</rdfs:comment>
+        <rdfs:label>Avoidance</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000064">
+        <rdfs:comment>Increased physiological arousal, including symptoms such as hypervigilance, irritability, and difficulty sleeping.</rdfs:comment>
+        <rdfs:label>Hyperarousal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000065">
+        <rdfs:comment>Emotional numbness or detachment from feelings as a response to overwhelming stress or trauma.</rdfs:comment>
+        <rdfs:label>Numbing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000066">
+        <rdfs:comment>A mental process used to cope with stress or trauma, leading to a sense of detachment from one&apos;s surroundings or self.</rdfs:comment>
+        <rdfs:label>Dissociation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000067">
+        <rdfs:comment>State of being easily annoyed or angered, often with a low tolerance for frustration.</rdfs:comment>
+        <rdfs:label>Irritability</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000068">
+        <rdfs:comment>Recurrent and persistent intrusive thoughts that cause significant distress, without accompanying compulsive behaviors.</rdfs:comment>
+        <rdfs:label>Pure obsessions</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000069">
+        <rdfs:comment>A state of heightened mood and increased energy, often associated with mania or hypomania.</rdfs:comment>
+        <rdfs:label>Euphoric activation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000070">
+        <rdfs:comment>Increased cognitive activity, often characterized by racing thoughts and distractibility.</rdfs:comment>
+        <rdfs:label>Hyperactive cognition</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000071">
+        <rdfs:comment>Excessive self-confidence leading to risky or impulsive behavior, often seen in manic episodes.</rdfs:comment>
+        <rdfs:label>Reckless overconfidence</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000072">
+        <rdfs:comment>A component characterized by symptoms of psychosis.</rdfs:comment>
+        <rdfs:label>Psychotic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000073">
+        <rdfs:comment>A component characterized by disorganized thinking and behavior.</rdfs:comment>
+        <rdfs:label>Disorganized</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000074">
+        <rdfs:comment>A component characterized by a lack of emotional expression.</rdfs:comment>
+        <rdfs:label>Inexpressivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000075">
+        <rdfs:comment>A component characterized by a lack of motivation to initiate and sustain purposeful activities.</rdfs:comment>
+        <rdfs:label>Avolition</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000076">
+        <rdfs:comment>A trait characterized by unconventional or peculiar behavior.</rdfs:comment>
+        <rdfs:label>Eccentricity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000077">
+        <rdfs:comment>A trait characterized by disturbances in cognition and perception.</rdfs:comment>
+        <rdfs:label>Cognitive perceptual dysregulation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000078">
+        <rdfs:comment>A trait characterized by the presence of atypical beliefs and experiences.</rdfs:comment>
+        <rdfs:label>Unusual beliefs and experiences</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000079">
+        <rdfs:comment>A trait characterized by a tendency to engage in vivid and complex fantasies.</rdfs:comment>
+        <rdfs:label>Fantasy proneness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000080">
         <rdfs:comment>A trait characterized by feelings of sadness and hopelessness.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#IntimacyAvoidance">
-        <rdfs:label>Intimacy Avoidance</rdfs:label>
+        <rdfs:label>Depressivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000081">
         <rdfs:comment>A trait characterized by a tendency to avoid close relationships and emotional intimacy.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Suspiciousness">
-        <rdfs:label>Suspiciousness</rdfs:label>
+        <rdfs:label>Intimacy avoidance</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000082">
         <rdfs:comment>A trait characterized by a tendency to be distrustful and suspicious of others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Withdrawal">
-        <rdfs:label>Withdrawal</rdfs:label>
+        <rdfs:label>Suspiciousness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000083">
         <rdfs:comment>A trait characterized by a tendency to retreat from social interactions and avoid engagement with others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#InterpersonalPassivity">
-        <rdfs:label>Interpersonal Passivity</rdfs:label>
+        <rdfs:label>Withdrawal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000084">
         <rdfs:comment>A trait characterized by a lack of initiative or assertiveness in social interactions.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Disaffiliativeness">
-        <rdfs:label>Disaffiliativeness</rdfs:label>
+        <rdfs:label>Interpersonal passivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000085">
         <rdfs:comment>A trait characterized by a lack of interest in forming or maintaining social bonds.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#AttentionSeeking">
-        <rdfs:label>Attention Seeking</rdfs:label>
-        <rdfs:comment>A trait characterized by behaviors that are intended to attract attention or gain approval from others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#ProblematicImpulsivity">
-        <rdfs:label>Problematic Impulsivity</rdfs:label>
-        <rdfs:comment>A trait characterized by difficulty in controlling impulsive behaviors, often leading to negative consequences.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Irresponsibility">
-        <rdfs:label>Irresponsibility</rdfs:label>
-        <rdfs:comment>A trait characterized by a lack of regard for the consequences of one's actions, often leading to reckless behavior.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Theft">
-        <rdfs:label>Theft</rdfs:label>
-        <rdfs:comment>A trait characterized by a tendency to steal or engage in dishonest acquisition of property.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Distractibility">
-        <rdfs:label>Distractibility</rdfs:label>
-        <rdfs:comment>A trait characterized by an inability to maintain focus, leading to frequent shifts in attention.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#RiskTaking">
-        <rdfs:label>Risk Taking</rdfs:label>
-        <rdfs:comment>A trait characterized by engaging in behaviors that involve significant risk, often without regard for potential negative outcomes.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#RigidPerfectionism">
-        <rdfs:label>Rigid Perfectionism</rdfs:label>
-        <rdfs:comment>A trait characterized by an excessive and inflexible striving for perfection and high standards, often leading to self-criticism and stress.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#RuminativeDeliberation">
-        <rdfs:label>Ruminative Deliberation</rdfs:label>
-        <rdfs:comment>A trait characterized by excessive and repetitive thinking about potential decisions and their outcomes, often leading to indecision and stress.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Workaholism">
-        <rdfs:label>Workaholism</rdfs:label>
-        <rdfs:comment>A trait characterized by an excessive and compulsive commitment to work, often at the expense of personal well-being and relationships.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#AttentionSeeking">
-        <rdfs:label>Attention Seeking</rdfs:label>
+        <rdfs:label>Disaffiliativeness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000086">
         <rdfs:comment>A trait characterized by a strong desire to attract and hold the attention of others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Callousness">
-        <rdfs:label>Callousness</rdfs:label>
-        <rdfs:comment>A trait characterized by a lack of empathy and a tendency to be emotionally cold or indifferent to others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Deceitfulness">
-        <rdfs:label>Deceitfulness</rdfs:label>
-        <rdfs:comment>A trait characterized by a tendency to lie, cheat, or deceive others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Grandiosity">
-        <rdfs:label>Grandiosity</rdfs:label>
-        <rdfs:comment>A trait characterized by an exaggerated sense of one's own importance, abilities, or achievements.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Manipulativeness">
-        <rdfs:label>Manipulativeness</rdfs:label>
-        <rdfs:comment>A trait characterized by a tendency to control or influence others for personal gain, often in a devious manner.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Rudeness">
-        <rdfs:label>Rudeness</rdfs:label>
-        <rdfs:comment>A trait characterized by a lack of manners or respect in social interactions.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Egocentricity">
-        <rdfs:label>Egocentricity</rdfs:label>
-        <rdfs:comment>A trait characterized by an excessive focus on oneself and one's own needs and desires.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Dominance">
-        <rdfs:label>Dominance</rdfs:label>
-        <rdfs:comment>A trait characterized by a desire to control or lead others, often displaying assertiveness and power.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Flirtatiousness">
-        <rdfs:label>Flirtatiousness</rdfs:label>
-        <rdfs:comment>A trait characterized by behavior that seeks to attract romantic or sexual interest from others through playful or provocative means.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Timorousness">
-        <rdfs:label>Timorousness</rdfs:label>
-        <rdfs:comment>A trait characterized by a tendency to be fearful or lacking in confidence, often leading to shyness or hesitation.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#ImpatientUrgency">
-        <rdfs:label>Impatient Urgency</rdfs:label>
+        <rdfs:comment>A trait characterized by behaviors that are intended to attract attention or gain approval from others.</rdfs:comment>
+        <rdfs:label>(low) Attention seeking</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000087">
+        <rdfs:comment>A trait characterized by difficulty in controlling impulsive behaviors, often leading to negative consequences.</rdfs:comment>
+        <rdfs:label>Problematic impulsivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000088">
+        <rdfs:comment>A trait characterized by a lack of regard for the consequences of one&apos;s actions, often leading to reckless behavior.</rdfs:comment>
+        <rdfs:label>Irresponsibility</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000089">
+        <rdfs:comment>A trait characterized by a tendency to steal or engage in dishonest acquisition of property.</rdfs:comment>
+        <rdfs:label>Theft</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000090">
+        <rdfs:comment>A trait characterized by an inability to maintain focus, leading to frequent shifts in attention.</rdfs:comment>
+        <rdfs:label>Distractibility</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000091">
+        <rdfs:comment>A trait characterized by engaging in behaviors that involve significant risk, often without regard for potential negative outcomes.</rdfs:comment>
+        <rdfs:label>Risk taking</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000092">
+        <rdfs:comment>A trait characterized by an excessive and inflexible striving for perfection and high standards, often leading to self-criticism and stress.</rdfs:comment>
+        <rdfs:label>(low) Rigid perfectionism</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000093">
+        <rdfs:comment>A trait characterized by excessive and repetitive thinking about potential decisions and their outcomes, often leading to indecision and stress.</rdfs:comment>
+        <rdfs:label>(low) Ruminative deliberation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000094">
+        <rdfs:comment>A trait characterized by an excessive and compulsive commitment to work, often at the expense of personal well-being and relationships.</rdfs:comment>
+        <rdfs:label>(low) Workaholism</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000095">
+        <rdfs:comment>The consumption of alcoholic beverages, which may lead to problematic use.</rdfs:comment>
+        <rdfs:label>Alcohol use</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000096">
+        <rdfs:comment>Issues related to the use of alcohol, including dependence and abuse.</rdfs:comment>
+        <rdfs:label>Alcohol problems</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000097">
+        <rdfs:comment>The consumption of marijuana, which may lead to problematic use.</rdfs:comment>
+        <rdfs:label>Marijuana use</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000098">
+        <rdfs:comment>Issues related to the use of marijuana, including dependence and abuse.</rdfs:comment>
+        <rdfs:label>Marijuana problems</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000099">
+        <rdfs:comment>The consumption of illicit or prescription drugs, which may lead to problematic use.</rdfs:comment>
+        <rdfs:label>Drug use</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000100">
+        <rdfs:comment>Issues related to the use of drugs, including dependence and abuse.</rdfs:comment>
+        <rdfs:label>Drug problems</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000101">
+        <rdfs:comment>Aggression involving physical acts of violence towards others.</rdfs:comment>
+        <rdfs:label>Physical aggression</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000102">
+        <rdfs:comment>Aggression that results in damage to property or the environment.</rdfs:comment>
+        <rdfs:label>Destructive aggression</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000103">
+        <rdfs:comment>Aggression that harms others through manipulation of social relationships.</rdfs:comment>
+        <rdfs:label>Relational aggression</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000104">
+        <rdfs:comment>Deceptive behavior intended to secure unfair or unlawful gain.</rdfs:comment>
+        <rdfs:label>Fraud</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000105">
         <rdfs:comment>A trait characterized by a lack of patience and a tendency to act impulsively in urgent situations.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#LowPlanfulControl">
-        <rdfs:label>Low Planful Control</rdfs:label>
+        <rdfs:label>Impatient urgency</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000106">
         <rdfs:comment>A trait indicating poor ability to plan and execute tasks effectively.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#LowDependability">
-        <rdfs:label>Low Dependability</rdfs:label>
+        <rdfs:label>(low) Planful control</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000107">
         <rdfs:comment>A trait characterized by a lack of reliability and consistency in fulfilling obligations.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Alienation">
-        <rdfs:label>Alienation</rdfs:label>
+        <rdfs:label>(low) Dependability</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000108">
         <rdfs:comment>A trait reflecting a sense of estrangement or detachment from others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#BoredomProneness">
-        <rdfs:label>Boredom Proneness</rdfs:label>
+        <rdfs:label>Alienation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000109">
         <rdfs:comment>A trait indicating a tendency to experience boredom frequently and easily.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#BlameExternalization">
-        <rdfs:label>Blame Externalization</rdfs:label>
+        <rdfs:label>Boredom proneness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000110">
         <rdfs:comment>A trait characterized by a tendency to attribute failures or problems to external factors rather than internal ones.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#LowHonesty">
-        <rdfs:label>Low Honesty</rdfs:label>
+        <rdfs:label>Blame externalization</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000111">
         <rdfs:comment>A trait marked by a tendency to be deceitful or untruthful.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#Rebelliousness">
-        <rdfs:label>Rebelliousness</rdfs:label>
+        <rdfs:label>(low) Honesty</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000112">
         <rdfs:comment>A trait characterized by resistance to authority and norms.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#LowEmpathy">
-        <rdfs:label>Low Empathy</rdfs:label>
+        <rdfs:label>Rebelliousness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000113">
         <rdfs:comment>A trait indicating a reduced ability to understand and share the feelings of others.</rdfs:comment>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.org/htp#ExcitementSeeking">
-        <rdfs:label>Excitement Seeking</rdfs:label>
+        <rdfs:label>(low) Empathy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000114">
         <rdfs:comment>A trait characterized by a desire for new, thrilling, or risky experiences.</rdfs:comment>
-    </owl:Class>
-
-    <!-- These classes represent specific disorders that involve significant disturbances in mental health and functioning. -->
-    <!-- They encompass various diagnostic conditions that impact thoughts, emotions, and behavior. -->
-    <rdf:Description rdf:about="http://purl.org/htp#IllnessAnxietyDisorder">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Illness Anxiety Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by excessive worry about having a serious illness, despite having no or minimal symptoms.</rdfs:comment>
+        <rdfs:label>Excitement seeking</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SomaticSymptomDisorder">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Somatic Symptom Disorder</rdfs:label>
-        <rdfs:comment>A disorder involving one or more somatic symptoms that are distressing or result in significant disruption in daily life, along with excessive thoughts, feelings, or behaviors related to the symptoms.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000115">
+        <rdfs:comment>A trait characterized by a lack of empathy and a tendency to be emotionally cold or indifferent to others.</rdfs:comment>
+        <rdfs:label>Callousness</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#MoodDisordersWithPsychosis">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Mood Disorders with Psychosis</rdfs:label>
-        <rdfs:comment>A disorder characterized by mood disturbances accompanied by psychotic symptoms.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000116">
+        <rdfs:comment>A trait characterized by a tendency to lie, cheat, or deceive others.</rdfs:comment>
+        <rdfs:label>Deceitfulness</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#ParanoidPD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Paranoid Personality Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by pervasive distrust and suspicion of others.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000117">
+        <rdfs:comment>A trait characterized by an exaggerated sense of one&apos;s own importance, abilities, or achievements.</rdfs:comment>
+        <rdfs:label>Grandiosity</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SchizophreniaSpectrum">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Schizophrenia Spectrum</rdfs:label>
-        <rdfs:comment>A spectrum of disorders characterized by disturbances in thought, perception, and behavior.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000118">
+        <rdfs:comment>A trait characterized by a tendency to control or influence others for personal gain, often in a devious manner.</rdfs:comment>
+        <rdfs:label>Manipulativeness</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SchizotypalPD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Schizotypal Personality Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by acute discomfort in close relationships and eccentric behavior.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000119">
+        <rdfs:comment>A trait characterized by a lack of manners or respect in social interactions.</rdfs:comment>
+        <rdfs:label>Rudeness</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#AvoidantPD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Avoidant Personality Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000120">
+        <rdfs:comment>A trait characterized by an excessive focus on oneself and one&apos;s own needs and desires.</rdfs:comment>
+        <rdfs:label>Egocentricity</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#HistrionicPD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Histrionic Personality Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by excessive emotionality and attention-seeking behavior.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000121">
+        <rdfs:comment>A trait characterized by a desire to control or lead others, often displaying assertiveness and power.</rdfs:comment>
+        <rdfs:label>Dominance</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SchizoidPD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Schizoid Personality Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by a pervasive pattern of detachment from social relationships and a restricted range of emotional expression.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000122">
+        <rdfs:comment>A trait characterized by behavior that seeks to attract romantic or sexual interest from others through playful or provocative means.</rdfs:comment>
+        <rdfs:label>Flirtatiousness</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#NarcissisticPD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Narcissistic Personality Disorder</rdfs:label>
-        <rdfs:comment>A personality disorder characterized by a pervasive pattern of grandiosity, need for admiration, and a lack of empathy.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000123">
+        <rdfs:comment>A trait characterized by a tendency to be fearful or lacking in confidence, often leading to shyness or hesitation.</rdfs:comment>
+        <rdfs:label>(low) Timorousness</rdfs:label>
     </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#ArousalDifficulties">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Arousal Difficulties</rdfs:label>
-        <rdfs:comment>A disorder characterized by difficulties in achieving or maintaining sexual arousal.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#LowDesire">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Low Desire</rdfs:label>
-        <rdfs:comment>A disorder characterized by a significantly reduced interest in sexual activity.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#OrgasmicFunction">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Orgasmic Function</rdfs:label>
-        <rdfs:comment>A disorder characterized by difficulties in achieving orgasm.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SexualPain">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Sexual Pain</rdfs:label>
-        <rdfs:comment>A disorder characterized by pain during sexual activity.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#AnorexiaNervosa">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Anorexia Nervosa</rdfs:label>
-        <rdfs:comment>A disorder characterized by an intense fear of gaining weight and a distorted body image, leading to restricted food intake and excessive weight loss.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#BingeEatingDisorder">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Binge Eating Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by frequent episodes of consuming large quantities of food, often quickly and to the point of discomfort, accompanied by a sense of loss of control during the binge and feelings of shame or distress.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#BulimiaNervosa">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Bulimia Nervosa</rdfs:label>
-        <rdfs:comment>A disorder characterized by binge eating followed by purging behaviors, such as vomiting or excessive use of laxatives, to prevent weight gain.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#Agoraphobia">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Agoraphobia</rdfs:label>
-        <rdfs:comment>A disorder characterized by intense fear of being in situations where escape might be difficult.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#OCD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Obsessive-Compulsive Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by unwanted repetitive thoughts (obsessions) and/or actions (compulsions).</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#PanicDisorder">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Panic Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by recurrent and unexpected panic attacks.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SAD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Social Anxiety Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by an intense fear of social situations.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SocialPhobia">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Social Phobia</rdfs:label>
-        <rdfs:comment>Excessive and persistent fear of social interactions and situations.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SpecificPhobia">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Specific Phobia</rdfs:label>
-        <rdfs:comment>A disorder characterized by intense, irrational fear of specific objects or situations.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#BorderlinePD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Borderline Personality Disorder</rdfs:label>
-        <rdfs:comment>A personality disorder characterized by unstable moods, behavior, and relationships.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#Dysthymia">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Dysthymia</rdfs:label>
-        <rdfs:comment>Chronic low-grade depression lasting for at least two years.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#GAD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Generalized Anxiety Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by excessive, uncontrollable worry about various aspects of life.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#MDD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Major Depressive Disorder</rdfs:label>
-        <rdfs:comment>A mood disorder characterized by persistent feelings of sadness and loss of interest or pleasure in activities.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#PTSD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Post-Traumatic Stress Disorder</rdfs:label>
-        <rdfs:comment>A mental health condition triggered by experiencing or witnessing a traumatic event, leading to flashbacks, nightmares, and severe anxiety.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#BipolarI">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Bipolar I Disorder</rdfs:label>
-        <rdfs:comment>A mood disorder characterized by at least one manic episode, often accompanied by depressive episodes.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#BipolarII">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Bipolar II Disorder</rdfs:label>
-        <rdfs:comment>A mood disorder characterized by at least one hypomanic episode and one major depressive episode, but no full manic episodes.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#SubstanceRelatedDisorders">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Substance-Related Disorders</rdfs:label>
-        <rdfs:comment>Disorders characterized by problematic use of substances, including alcohol, marijuana, and other drugs.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#AntisocialPD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Antisocial Personality Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by a persistent pattern of disregard for, and violation of, the rights of others.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#ConductDisorder">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Conduct Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by a repetitive and persistent pattern of behavior that violates societal norms and the rights of others.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#IED">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Intermittent Explosive Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by recurrent outbursts of anger or violence that are disproportionate to the situation.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#ODD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Oppositional Defiant Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by a pattern of angry or irritable mood, argumentative or defiant behavior, or vindictiveness.</rdfs:comment>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://purl.org/htp#ADHD">
-        <rdf:type rdf:resource="http://purl.org/htp#Disorder"/>
-        <rdfs:label>Attention-Deficit/Hyperactivity Disorder</rdfs:label>
-        <rdfs:comment>A disorder characterized by a persistent pattern of inattention and/or hyperactivity-impulsivity that interferes with functioning or development.</rdfs:comment>
-    </rdf:Description>
-
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
