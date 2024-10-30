@@ -1320,607 +1320,810 @@
 
     <!-- http://purl.org/htp#HTP_0000023 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000023"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000023">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000024 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000024"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000024">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000025 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000025"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000025">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000026 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000026"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000026">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000027 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000027"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000027">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000028 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000028"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000028">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000029 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000029"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000029">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000030 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000030"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000030">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000031 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000031"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000031">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000032 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000032"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000032">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000033 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000033"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000033">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000034 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000034"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000034">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000035 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000035"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000035">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000036 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000036"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000036">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000037 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000037"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000037">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000038 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000038"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000038">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000039 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000039"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000039">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000040 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000040"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000040">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000041 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000041"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000041">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000042 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000042"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000042">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000043 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000043"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000043">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000044 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000044"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000044">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000045 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000045"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000045">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000046 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000046"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000046">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000047 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000047"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000047">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000048 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000048"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000048">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000049 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000049"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000049">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000050 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000050"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000050">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000051 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000051"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000051">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000052 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000052"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000052">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000053 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000053"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000053">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000054 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000054"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000054">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000055 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000055"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000055">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000056 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000056"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000056">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000057 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000057"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000057">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000058 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000058"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000058">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000059 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000059"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000059">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000060 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000060"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000060">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000061 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000061"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000061">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000062 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000062"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000062">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000063 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000063"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000063">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000064 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000064"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000064">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000065 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000065"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000065">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000066 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000066"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000066">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000067 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000067"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000067">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000068 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000068"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000068">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000069 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000069"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000069">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000070 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000070"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000070">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000071 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000071"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000071">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000072 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000072"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000072">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000073 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000073"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000073">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000074 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000074"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000074">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000075 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000075"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000075">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000076 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000076"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000076">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000077 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000077"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000077">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000078 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000078"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000078">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000079 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000079"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000079">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000080 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000080"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000080">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000081 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000081"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000081">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000082 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000082"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000082">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000083 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000083"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000083">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000084 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000084"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000084">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000085 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000085"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000085">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000086 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000086"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000086">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000087 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000087"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000087">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000088 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000088"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000088">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000089 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000089"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000089">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000090 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000090"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000090">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000091 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000091"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000091">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000092 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000092"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000092">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000093 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000093"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000093">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000094 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000094"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000094">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000095 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000095"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000095">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000096 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000096"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000096">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000097 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000097"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000097">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000098 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000098"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000098">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000099 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000099"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000099">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000100 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000100"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000100">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000101 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000101"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000101">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000102 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000102"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000102">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000103 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000103"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000103">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000104 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000104"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000104">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000006"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000105 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000105"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000105">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000106 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000106"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000106">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000107 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000107"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000107">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000108 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000108"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000108">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000109 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000109"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000109">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000110 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000110"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000110">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000111 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000111"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000111">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000112 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000112"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000112">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000113 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000113"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000113">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000114 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000114"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000114">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000115 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000115"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000115">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000116 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000116"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000116">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000117 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000117"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000117">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000118 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000118"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000118">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000119 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000119"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000119">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000120 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000120"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000120">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000121 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000121"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000121">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000122 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000122"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000122">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/htp#HTP_0000123 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000123"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000123">
+        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000007"/>
+    </owl:NamedIndividual>
     
 
 
