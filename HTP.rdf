@@ -243,7 +243,6 @@
     <!-- http://purl.org/htp#HTP_0000002 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000001"/>
         <rdfs:comment xml:lang="en">A level within the HiTOP model that groups related mental health issues into broad categories, providing a framework for understanding complex symptomatology.</rdfs:comment>
         <rdfs:label xml:lang="en">Spectra</rdfs:label>
     </owl:Class>
@@ -253,7 +252,6 @@
     <!-- http://purl.org/htp#HTP_0000003 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000002"/>
         <rdfs:comment xml:lang="en">A more specific grouping within a spectrum, representing clusters of symptoms or traits that share common characteristics.</rdfs:comment>
         <rdfs:label xml:lang="en">Subfactor</rdfs:label>
     </owl:Class>
@@ -263,8 +261,6 @@
     <!-- http://purl.org/htp#HTP_0000004 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000003"/>
         <rdfs:comment xml:lang="en">A collection of symptoms that often occur together and characterize a particular mental disorder, as identified within the HiTOP framework.</rdfs:comment>
         <rdfs:label xml:lang="en">Syndrome</rdfs:label>
     </owl:Class>
@@ -274,7 +270,6 @@
     <!-- http://purl.org/htp#HTP_0000006 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000004"/>
         <rdfs:comment xml:lang="en">A specific aspect of a Syndrome or subfactor, representing distinct elements of psychological functioning or dysfunction.</rdfs:comment>
         <rdfs:label xml:lang="en">Component</rdfs:label>
     </owl:Class>
@@ -284,7 +279,6 @@
     <!-- http://purl.org/htp#HTP_0000007 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000004"/>
         <rdfs:comment xml:lang="en">A stable characteristic or disposition that influences behavior and thought patterns, considered in the HiTOP model as part of individual differences.</rdfs:comment>
         <rdfs:label xml:lang="en">Trait</rdfs:label>
     </owl:Class>
@@ -294,8 +288,6 @@
     <!-- http://purl.org/htp#HTP_0000008 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000004"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/htp#HTP_0000006"/>
         <rdfs:comment xml:lang="en">An observable sign or manifestation of a mental disorder, often used to diagnose and classify conditions within the HiTOP framework.</rdfs:comment>
         <rdfs:label xml:lang="en">Symptom</rdfs:label>
     </owl:Class>
