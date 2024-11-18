@@ -180,7 +180,26 @@
         <rdfs:comment xml:lang="en">This property associates a concept with its corresponding superspectra, representing broad domains of psychological phenomena.</rdfs:comment>
         <rdfs:label xml:lang="en">has Superspectra</rdfs:label>
     </owl:ObjectProperty>
+
+    <!-- http://purl.org/htp#hasFactor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasFactor">
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000128"/>
+        <futureReleaseInfo xml:lang="en">Indicates the possibility of extending or modifying the taxonomy at the factor level to incorporate new findings in the field of psychopathology. This supports the evolution of the model to remain aligned with contemporary research.</futureReleaseInfo>
+        <rdfs:comment xml:lang="en">This property represents the highest level of the HiTOP taxonomy, associating entities with the psychopathology factor level, which encompasses broad constructs underlying mental health and psychological disorders.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Factor</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    <!-- http://purl.org/htp#hasLevel -->
     
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasLevel">
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000000"/>
+        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of additional levels or modification of existing ones to reflect new developments in the model.
+            Supports flexibility in expanding or refining the taxonomy based on emerging research and evolving understanding of psychological constructs.</futureReleaseInfo>
+        <rdfs:comment xml:lang="en">This property establishes a hierarchical relationship between entities, associating them with their respective level in the HiTOP taxonomy, such as psychopathology factors, superspectra, spectra, subfactors, or components.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Level</rdfs:label>
+    </owl:ObjectProperty>
 
 
 
@@ -262,6 +281,12 @@
         <rdfs:label xml:lang="en">Symptom</rdfs:label>
     </owl:Class>
     
+    <!-- http://purl.org/htp#HTP_0000128 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000128">
+        <rdfs:comment xml:lang="en">A core construct in the HiTOP framework that represents broad, underlying dimensions of psychopathology. Factors are used to classify and diagnose mental health conditions, forming the highest level of the taxonomy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Factor</rdfs:label>
+    </owl:Class>
 
 
     <!-- http://purl.org/htp#HTP_0000009 -->
