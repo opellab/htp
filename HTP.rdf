@@ -29,7 +29,7 @@
         <rdfs:comment>Dynamic Ontology for Mental Health Classification representing various classes to structure mental health dimensions in the HiTOP model.</rdfs:comment>
         <rdfs:label>Dynamic Ontology for Mental Health Classification</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.hitop-system.org/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -99,8 +99,8 @@
         <rdfs:comment>
             This ontology is designed with flexibility to accommodate both vertical and horizontal changes, reflecting the evolving nature of taxonomy. 
             It utilizes a dynamic taxonomy that supports the seamless integration of new categories and subcategories, avoiding a rigid subclass hierarchy. 
-            The ontology employs properties such as `hasSuperspectra`, `hasSpectra`, `hasSubfactor`, `hasSyndrome`, `hasComponent`, `hasTrait`, `hasSymptom`, 
-            and `hasDisorder` to define clear relationships and maintain hierarchical adaptability. Future updates may include adding new categories
+            The ontology employs properties such as `hasSuperspectra`, `hasSpectra`, `hasSubfactor` and `hasComponent` 
+            to define clear relationships and maintain hierarchical adaptability. Future updates may include adding new categories
             to reflect emerging research findings and evolving scientific insights. This design ensures that the ontology can easily incorporate 
             new taxonomic elements and relationships, thus supporting continuous enhancement and refinement.
         </rdfs:comment>
@@ -183,42 +183,6 @@
     
 
 
-    <!-- http://purl.org/htp#hasSymptom -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSymptom">
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000008"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of new symptoms or modification of existing ones to better align with clinical and research developments.
-            Supports the ability to update and expand the taxonomy with new symptoms as our understanding of psychological disorders evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property links a concept to its symptoms, which are observable signs of a condition or disorder.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Symptom</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/htp#hasSyndrome -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSyndrome">
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000004"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of new syndromes or revision of current ones to better reflect evolving clinical and research findings.
-            Supports the ability to update and expand the taxonomy to include new syndromic classifications as our understanding of psychological conditions progresses.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property associates a concept with its Syndromes, identifying collections of symptoms that occur together.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Syndrome</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/htp#hasTrait -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasTrait">
-        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000004"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000007"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of new traits or modification of existing ones to reflect advancements in personality and psychological research.
-            Supports adaptability in refining and expanding the taxonomy to include new traits based on evolving understanding and empirical data.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property connects a Syndrome to its traits, highlighting specific characteristics or tendencies within the Syndrome.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Trait</rdfs:label>
-    </owl:ObjectProperty>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -230,6 +194,12 @@
 
     
 
+    <!-- http://purl.org/htp#HTP_0000000 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000000">
+        <rdfs:comment xml:lang="en">A structural component of the HiTOP taxonomy used to define hierarchical relationships between psychological constructs. Each instance of Level represents a specific position in the vertical hierarchy, encompassing constructs such as psychopathology factors, superspectra, spectra, subfactors, and components.</rdfs:comment>
+        <rdfs:label xml:lang="en">Level</rdfs:label>
+    </owl:Class>
 
     <!-- http://purl.org/htp#HTP_0000001 -->
 
@@ -1068,18 +1038,18 @@
         <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000018"/>
         <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000019"/>
         <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000029"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000030"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000031"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000032"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000033"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000034"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000035"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000036"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000037"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000038"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000039"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000124"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000029"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000030"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000031"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000032"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000033"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000034"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000035"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000036"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000037"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000038"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000039"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000124"/>
     </owl:NamedIndividual>
     
 
@@ -1093,10 +1063,10 @@
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000074"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000075"/>
         <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000076"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000077"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000078"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000079"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000076"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000077"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000078"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000079"/>
     </owl:NamedIndividual>
     
 
@@ -1105,14 +1075,14 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000013">
         <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000053"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000080"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000081"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000082"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000083"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000084"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000085"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000086"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000053"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000080"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000081"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000082"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000083"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000084"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000085"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000086"/>
     </owl:NamedIndividual>
     
 
@@ -1123,14 +1093,14 @@
         <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
         <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000021"/>
         <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000087"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000088"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000089"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000090"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000091"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000092"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000093"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000094"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000087"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000088"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000089"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000090"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000091"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000092"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000093"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000094"/>
     </owl:NamedIndividual>
     
 
@@ -1140,17 +1110,17 @@
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000015">
         <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
         <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000086"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000115"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000116"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000117"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000118"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000119"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000120"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000121"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000122"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000123"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000126"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000086"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000115"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000116"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000117"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000118"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000119"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000120"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000121"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000122"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000123"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000126"/>
     </owl:NamedIndividual>
     
 
@@ -1250,16 +1220,16 @@
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000102"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000103"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000104"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000105"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000106"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000107"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000108"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000109"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000110"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000111"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000112"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000113"/>
-        <hasTrait rdf:resource="http://purl.org/htp#HTP_0000114"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000105"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000106"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000107"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000108"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000109"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000110"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000111"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000112"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000113"/>
+        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000114"/>
     </owl:NamedIndividual>
     
 
