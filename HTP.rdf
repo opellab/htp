@@ -11,18 +11,18 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/htp">
-        <dc:contributor>Prof. Dr. Nils Opel</dc:contributor>
-        <dc:creator>
+        <dcterms:contributor>Prof. Dr. Nils Opel</dcterms:contributor>
+        <dcterms:creator>
             <rdf:Description>
                 <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
                 <foaf:mbox rdf:resource="mailto:rogerio.blitz@med.uni-jena.de"/>
                 <foaf:name>Dr. Rogério Blitz</foaf:name>
             </rdf:Description>
-        </dc:creator>
-        <dc:date>2024-08-30</dc:date>
-        <dc:publisher>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dc:publisher>
+        </dcterms:creator>
+        <dcterms:date>2024-08-30</dcterms:date>
         <dcterms:issued>2024-08-18</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <dcterms:publisher>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dcterms:publisher>
         <dcterms:rights>This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License.</dcterms:rights>
         <dcterms:rightsHolder>Dr. Rogério Blitz, Prof. Dr. Nils Opel</dcterms:rightsHolder>
         <dcterms:rightsHolder>Universitätsklinikum Jena</dcterms:rightsHolder>
@@ -45,79 +45,149 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
+    <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource. This may be a person, organization, or service that has helped create or enhance the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor"/>
+    </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
+    <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource. Typically, this is a person, organization, or service.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/creator"/>
+    </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/date -->
+    <!-- http://purl.org/dc/terms/date -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date">
+        <rdfs:comment xml:lang="en">The date of an event in the lifecycle of the resource. Typically, this is associated with the creation or modification of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/date"/>
+    </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/publisher -->
+    <!-- http://purl.org/dc/terms/hasVersion -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+        <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">hasVersion</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/hasVersion"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf">
+        <rdfs:comment xml:lang="en">A related resource of which the described resource is a version, edition, or adaptation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">isVersionOf</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/isVersionOf"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:comment xml:lang="en">The date on which the resource was issued or made publicly available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Issued</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/issued"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:comment xml:lang="en">A legal document giving formal permission to do something with the resource, such as reuse or modification, under specified conditions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">License</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/license"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available, such as an organization, institution, or individual.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/rights -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights">
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource, including intellectual property rights and restrictions on use.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/rights"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder">
+        <rdfs:comment xml:lang="en">An entity that holds the rights to the resource, such as a person, organization, or institution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Rights Holder</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/rightsHolder"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/htp#futureReleaseInfo -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/htp#futureReleaseInfo">
-        <rdfs:comment>
-            This ontology is designed with flexibility to accommodate both vertical and horizontal changes, reflecting the evolving nature of taxonomy. 
+        <rdfs:comment xml:lang="en">This ontology is designed with flexibility to accommodate both vertical and horizontal changes, reflecting the evolving nature of taxonomy. 
             It utilizes a dynamic taxonomy that supports the seamless integration of new categories and subcategories, avoiding a rigid subclass hierarchy. 
             The ontology employs properties such as `hasSuperspectra`, `hasSpectra`, `hasSubfactor` and `hasComponent` 
             to define clear relationships and maintain hierarchical adaptability. Future updates may include adding new categories
             to reflect emerging research findings and evolving scientific insights. This design ensures that the ontology can easily incorporate 
-            new taxonomic elements and relationships, thus supporting continuous enhancement and refinement.
-        </rdfs:comment>
-        <rdfs:label>Future Release Information</rdfs:label>
+            new taxonomic elements and relationships, thus supporting continuous enhancement and refinement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Future Release Information</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/mbox -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdfs:comment xml:lang="en">A mailbox or email address of the resource, often used to identify or contact the person or organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label xml:lang="en">Mbox</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/#term_mbox"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:comment xml:lang="en">A name for the resource, typically used to represent a human-readable label or identifier.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/#term_name"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -141,6 +211,29 @@
             Supports flexibility in updating and expanding the taxonomy with new components as more granular research findings emerge.</futureReleaseInfo>
         <rdfs:comment xml:lang="en">This property links a Syndrome to its components, detailing the individual parts that form the Syndrome.</rdfs:comment>
         <rdfs:label xml:lang="en">has Component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/htp#hasFactor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasFactor">
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000128"/>
+        <futureReleaseInfo xml:lang="en">Indicates the possibility of extending or modifying the taxonomy at the factor level to incorporate new findings in the field of psychopathology. This supports the evolution of the model to remain aligned with contemporary research.</futureReleaseInfo>
+        <rdfs:comment xml:lang="en">This property represents the highest level of the HiTOP taxonomy, associating entities with the psychopathology factor level, which encompasses broad constructs underlying mental health and psychological disorders.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Factor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/htp#hasLevel -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasLevel">
+        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000000"/>
+        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of additional levels or modification of existing ones to reflect new developments in the model.
+            Supports flexibility in expanding or refining the taxonomy based on emerging research and evolving understanding of psychological constructs.</futureReleaseInfo>
+        <rdfs:comment xml:lang="en">This property establishes a hierarchical relationship between entities, associating them with their respective level in the HiTOP taxonomy, such as psychopathology factors, superspectra, spectra, subfactors, or components.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Level</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -180,27 +273,7 @@
         <rdfs:comment xml:lang="en">This property associates a concept with its corresponding superspectra, representing broad domains of psychological phenomena.</rdfs:comment>
         <rdfs:label xml:lang="en">has Superspectra</rdfs:label>
     </owl:ObjectProperty>
-
-    <!-- http://purl.org/htp#hasFactor -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasFactor">
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000128"/>
-        <futureReleaseInfo xml:lang="en">Indicates the possibility of extending or modifying the taxonomy at the factor level to incorporate new findings in the field of psychopathology. This supports the evolution of the model to remain aligned with contemporary research.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property represents the highest level of the HiTOP taxonomy, associating entities with the psychopathology factor level, which encompasses broad constructs underlying mental health and psychological disorders.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Factor</rdfs:label>
-    </owl:ObjectProperty>
-
-
-    <!-- http://purl.org/htp#hasLevel -->
     
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasLevel">
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of additional levels or modification of existing ones to reflect new developments in the model.
-            Supports flexibility in expanding or refining the taxonomy based on emerging research and evolving understanding of psychological constructs.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property establishes a hierarchical relationship between entities, associating them with their respective level in the HiTOP taxonomy, such as psychopathology factors, superspectra, spectra, subfactors, or components.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Level</rdfs:label>
-    </owl:ObjectProperty>
-
 
 
     <!-- 
@@ -213,12 +286,15 @@
 
     
 
+
     <!-- http://purl.org/htp#HTP_0000000 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000000">
         <rdfs:comment xml:lang="en">A structural component of the HiTOP taxonomy used to define hierarchical relationships between psychological constructs. Each instance of Level represents a specific position in the vertical hierarchy, encompassing constructs such as psychopathology factors, superspectra, spectra, subfactors, and components.</rdfs:comment>
         <rdfs:label xml:lang="en">Level</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purl.org/htp#HTP_0000001 -->
 
@@ -281,12 +357,6 @@
         <rdfs:label xml:lang="en">Symptom</rdfs:label>
     </owl:Class>
     
-    <!-- http://purl.org/htp#HTP_0000128 -->
-
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000128">
-        <rdfs:comment xml:lang="en">A core construct in the HiTOP framework that represents broad, underlying dimensions of psychopathology. Factors are used to classify and diagnose mental health conditions, forming the highest level of the taxonomy.</rdfs:comment>
-        <rdfs:label xml:lang="en">Factor</rdfs:label>
-    </owl:Class>
 
 
     <!-- http://purl.org/htp#HTP_0000009 -->
@@ -973,6 +1043,15 @@
     
 
 
+    <!-- http://purl.org/htp#HTP_0000128 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000128">
+        <rdfs:comment xml:lang="en">A core construct in the HiTOP framework that represents broad, underlying dimensions of psychopathology. Factors are used to classify and diagnose mental health conditions, forming the highest level of the taxonomy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/htp#HTP_000124 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_000124">
@@ -1058,11 +1137,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000011">
         <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000016"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000017"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000018"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000019"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000029"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000030"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000031"/>
@@ -1075,6 +1149,11 @@
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000038"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000039"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000124"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000016"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000017"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000018"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000019"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
     </owl:NamedIndividual>
     
 
@@ -1087,11 +1166,11 @@
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000073"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000074"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000075"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000076"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000077"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000078"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000079"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
     </owl:NamedIndividual>
     
 
@@ -1116,8 +1195,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000014">
         <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000021"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000087"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000088"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000089"/>
@@ -1126,6 +1203,8 @@
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000092"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000093"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000094"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000021"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
     </owl:NamedIndividual>
     
 
@@ -1134,7 +1213,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000015">
         <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000086"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000115"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000116"/>
@@ -1146,6 +1224,7 @@
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000122"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000123"/>
         <hasComponent rdf:resource="http://purl.org/htp#HTP_0000126"/>
+        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
     </owl:NamedIndividual>
     
 
