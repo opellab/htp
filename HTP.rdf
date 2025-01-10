@@ -32,8 +32,6 @@
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</owl:versionInfo>
     </owl:Ontology>
     
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -41,10 +39,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
-
 
     <!-- http://purl.org/dc/terms/hasVersion -->
 
@@ -55,8 +49,6 @@
         <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/hasVersion"/>
     </owl:AnnotationProperty>
     
-
-
     <!-- http://purl.org/dc/terms/isVersionOf -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf">
@@ -66,8 +58,6 @@
         <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/isVersionOf"/>
     </owl:AnnotationProperty>
     
-
-
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
@@ -77,12 +67,6 @@
         <rdfs:seeAlso rdf:resource="http://dublincore.org/specifications/dublin-core/dcmi-terms/terms/issued"/>
     </owl:AnnotationProperty>
     
-
-
-    
-
-
-
     <!-- http://purl.org/htp#futureReleaseInfo -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/htp#futureReleaseInfo">
@@ -95,9 +79,6 @@
         <rdfs:label xml:lang="en">Future Release Information</rdfs:label>
     </owl:AnnotationProperty>
     
-
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -105,23 +86,7 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
     
-
-
-    <!-- http://purl.org/htp#hasComponent -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasComponent">
-        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future addition of new components or revision of existing ones to capture more detailed aspects of psychological phenomena.
-            Supports flexibility in updating and expanding the taxonomy with new components as more granular research findings emerge.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property links a Syndrome to its components, detailing the individual parts that form the Syndrome.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Component</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/htp#hasFactor -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/htp#hasFactor">
@@ -132,8 +97,6 @@
         <rdfs:label xml:lang="en">has Factor</rdfs:label>
     </owl:ObjectProperty>
     
-
-
     <!-- http://purl.org/htp#hasLevel -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/htp#hasLevel">
@@ -144,47 +107,6 @@
         <rdfs:comment xml:lang="en">This property establishes a hierarchical relationship between entities, associating them with their respective level in the HiTOP taxonomy, such as psychopathology factors, superspectra, spectra, subfactors, or components.</rdfs:comment>
         <rdfs:label xml:lang="en">has Level</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/htp#hasSpectra -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSpectra">
-        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future addition of new spectra or revision of existing ones to better categorize psychological phenomena.
-            Supports adaptability in expanding the taxonomy to include emerging spectra based on new research and evolving theoretical frameworks.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property links a superspectra to its underlying spectra, reflecting a more specific category within the domain.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Spectra</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/htp#hasSubfactor -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSubfactor">
-        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of additional subfactors or modification of existing ones to reflect new insights and finer categorizations.
-            Supports flexibility in adapting the taxonomy to include new subfactors or refine existing ones based on ongoing research advancements.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property connects a spectra to its subfactors, highlighting the distinct elements that make up the spectra.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Subfactor</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/htp#hasSuperspectra -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#hasSuperspectra">
-        <rdfs:domain rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <rdfs:range rdf:resource="http://purl.org/htp#HTP_0000000"/>
-        <futureReleaseInfo xml:lang="en">Indicates the potential for future inclusion of additional superspectra or modification of existing ones to reflect new developments in the model.
-            Supports flexibility in expanding or refining the taxonomy based on emerging research and evolving understanding of psychological phenomena.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">This property associates a concept with its corresponding superspectra, representing broad domains of psychological phenomena.</rdfs:comment>
-        <rdfs:label xml:lang="en">has Superspectra</rdfs:label>
-    </owl:ObjectProperty>
-    
-
 
     <!-- http://purl.org/htp#partOfVersionHistory -->
 
@@ -195,8 +117,6 @@
         <rdfs:label xml:lang="en">partOfVersionHistory</rdfs:label>
     </owl:ObjectProperty>
     
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -204,9 +124,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
 
     <!-- http://purl.org/htp#hasVersionID -->
 
@@ -336,8 +253,6 @@
         <rdfs:label xml:lang="en">Has Version ID</rdfs:label>
     </owl:DatatypeProperty>
     
-
-
     <!-- http://purl.org/htp#versionDescription -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/htp#versionDescription">
@@ -462,8 +377,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -472,93 +385,105 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
     <!-- http://purl.org/htp#HTP_0000000 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000000">
-        <rdfs:comment xml:lang="en">A structural component of the HiTOP taxonomy used to define hierarchical relationships between psychological constructs. Each instance of Level represents a specific position in the vertical hierarchy, encompassing constructs such as psychopathology factors, superspectra, spectra, subfactors, and components.</rdfs:comment>
+        <rdfs:comment xml:lang="en">
+            A structural component of the HiTOP taxonomy used to define hierarchical relationships between psychological constructs. 
+            Each instance of Level represents a specific position in the vertical hierarchy, encompassing constructs such as psychopathology factors, superspectra, spectra, subfactors, and components.
+            The restriction ensures that all instances of this class must 
+            have at least one level (via the property htp:hasLevel) 
+            that is also an instance of this class.
+        </rdfs:comment>
         <rdfs:label xml:lang="en">Level</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/htp#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/htp#HTP_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <!-- http://purl.org/htp#HTP_0000128 -->
+
+    <owl:Class rdf:about="http://purl.org/htp#HTP_0000128">
+        <rdfs:comment xml:lang="en">
+            A core construct in the HiTOP framework that represents broad, underlying dimensions of psychopathology. 
+            Factors are used to classify and diagnose mental health conditions, forming the highest level of the taxonomy.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">Factor</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/htp#hasFactor"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/htp#HTP_0000128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
-
-
     <!-- http://purl.org/htp#HTP_0000001 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000001">
+    <!-- <owl:Class rdf:about="http://purl.org/htp#HTP_0000001">
         <rdfs:comment xml:lang="en">A broad category in the HiTOP model that encompasses large domains of psychological phenomena, often representing overarching patterns of mental health.</rdfs:comment>
         <rdfs:label xml:lang="en">Superspectra</rdfs:label>
     </owl:Class>
-    
-
+    -->
 
     <!-- http://purl.org/htp#HTP_0000002 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000002">
+    <!-- <owl:Class rdf:about="http://purl.org/htp#HTP_0000002">
         <rdfs:comment xml:lang="en">A level within the HiTOP model that groups related mental health issues into broad categories, providing a framework for understanding complex symptomatology.</rdfs:comment>
         <rdfs:label xml:lang="en">Spectra</rdfs:label>
     </owl:Class>
-    
-
+    -->
 
     <!-- http://purl.org/htp#HTP_0000003 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000003">
+    <!--<owl:Class rdf:about="http://purl.org/htp#HTP_0000003">
         <rdfs:comment xml:lang="en">A more specific grouping within a spectrum, representing clusters of symptoms or traits that share common characteristics.</rdfs:comment>
         <rdfs:label xml:lang="en">Subfactor</rdfs:label>
     </owl:Class>
-    
-
+    -->
 
     <!-- http://purl.org/htp#HTP_0000004 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000004">
+    <!--<owl:Class rdf:about="http://purl.org/htp#HTP_0000004">
         <rdfs:comment xml:lang="en">A collection of symptoms that often occur together and characterize a particular mental disorder, as identified within the HiTOP framework.</rdfs:comment>
         <rdfs:label xml:lang="en">Syndrome</rdfs:label>
     </owl:Class>
-    
-
+    -->
 
     <!-- http://purl.org/htp#HTP_0000006 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000006">
+    <!--<owl:Class rdf:about="http://purl.org/htp#HTP_0000006">
         <rdfs:comment xml:lang="en">A specific aspect of a Syndrome or subfactor, representing distinct elements of psychological functioning or dysfunction.</rdfs:comment>
         <rdfs:label xml:lang="en">Component</rdfs:label>
     </owl:Class>
-    
-
+    -->
 
     <!-- http://purl.org/htp#HTP_0000007 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000007">
+    <!--<owl:Class rdf:about="http://purl.org/htp#HTP_0000007">
         <rdfs:comment xml:lang="en">A stable characteristic or disposition that influences behavior and thought patterns, considered in the HiTOP model as part of individual differences.</rdfs:comment>
         <rdfs:label xml:lang="en">Trait</rdfs:label>
     </owl:Class>
-    
-
+    -->
 
     <!-- http://purl.org/htp#HTP_0000008 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000008">
+    <!--<owl:Class rdf:about="http://purl.org/htp#HTP_0000008">
         <rdfs:comment xml:lang="en">An observable sign or manifestation of a mental disorder, often used to diagnose and classify conditions within the HiTOP framework.</rdfs:comment>
         <rdfs:label xml:lang="en">Symptom</rdfs:label>
     </owl:Class>
-    
-
+    -->
 
     <!-- http://purl.org/htp#HTP_0000009 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000009"/>
-    
-
 
     <!-- http://purl.org/htp#HTP_0000010 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000010"/>
     
-
-
     <!-- http://purl.org/htp#HTP_0000011 -->
 
     <owl:Class rdf:about="http://purl.org/htp#HTP_0000011"/>
@@ -1231,12 +1156,7 @@
     
 
 
-    <!-- http://purl.org/htp#HTP_0000128 -->
 
-    <owl:Class rdf:about="http://purl.org/htp#HTP_0000128">
-        <rdfs:comment xml:lang="en">A core construct in the HiTOP framework that represents broad, underlying dimensions of psychopathology. Factors are used to classify and diagnose mental health conditions, forming the highest level of the taxonomy.</rdfs:comment>
-        <rdfs:label xml:lang="en">Factor</rdfs:label>
-    </owl:Class>
     
 
 
@@ -1301,256 +1221,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000009 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000009">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000001"/>
-        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000010"/>
-        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000011"/>
-        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000012"/>
-        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000013"/>
-        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000014"/>
-        <hasSpectra rdf:resource="http://purl.org/htp#HTP_0000015"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000010 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000010">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000023"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000024"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000025"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000026"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000027"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000028"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000011 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000011">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000029"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000030"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000031"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000032"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000033"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000034"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000035"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000036"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000037"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000038"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000039"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000124"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000016"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000017"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000018"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000019"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000012 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000012">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000072"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000073"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000074"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000075"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000076"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000077"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000078"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000079"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000020"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000013 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000013">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000053"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000080"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000081"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000082"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000083"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000084"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000085"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000086"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000014 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000014">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000087"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000088"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000089"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000090"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000091"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000092"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000093"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000094"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000021"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000015 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000015">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000002"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000086"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000115"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000116"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000117"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000118"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000119"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000120"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000121"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000122"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000123"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000126"/>
-        <hasSubfactor rdf:resource="http://purl.org/htp#HTP_0000022"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000016 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000016">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000017 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000017">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000018 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000018">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000040"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000041"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000042"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000043"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000044"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000045"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000046"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000047"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000048"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000049"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000050"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000125"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000019 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000019">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000051"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000052"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000053"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000054"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000055"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000056"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000057"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000058"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000059"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000060"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000062"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000063"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000064"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000065"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000066"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000067"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000068"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000127"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000020 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000020">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000069"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000070"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000071"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000021 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000021">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000095"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000096"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000097"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000098"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000099"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000100"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000022 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000022">
-        <rdf:type rdf:resource="http://purl.org/htp#HTP_0000003"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000101"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000102"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000103"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000104"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000105"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000106"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000107"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000108"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000109"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000110"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000111"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000112"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000113"/>
-        <hasComponent rdf:resource="http://purl.org/htp#HTP_0000114"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.org/htp#HTP_0000023 -->
 
@@ -2530,93 +2200,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000009">
-        <futureReleaseInfo>
-            Indicates the potential for future inclusion of additional spectra and other related concepts as new developments and insights emerge in the field of general psychopathology.
-            Allows for flexible expansion and refinement of the taxonomy to integrate new spectra, subfactors, and related elements to better capture evolving understanding and research findings.
-        </futureReleaseInfo>
-        <rdfs:comment xml:lang="en">General Psychopathology refers to the broad, overarching category of mental disorders and psychological symptoms that can manifest across different mental health conditions. It encompasses a wide range of psychological phenomena that are not specific to any single disorder but may contribute to or exacerbate multiple types of mental health issues. This category includes general symptoms and traits that are commonly observed in various psychiatric conditions, such as mood disturbances, anxiety, cognitive dysfunctions, and behavioral problems.</rdfs:comment>
-        <rdfs:label xml:lang="en">General Psychopathology</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000010">
-        <futureReleaseInfo xml:lang="en">This spectrum may include future expansions or modifications based on emerging research or changes in the understanding of somatoform disorders. 
-            It is designed to adapt to new developments by allowing the addition of new related spectra or concepts as needed.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">The Somatoform label refers to a category of mental health disorders characterized by physical symptoms that cannot be fully explained by any underlying medical condition, highlighting the complex interaction between mind and body in mental health.</rdfs:comment>
-        <rdfs:label xml:lang="en">Somatoform</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000011">
-        <futureReleaseInfo xml:lang="en">This spectrum can accommodate future additions or modifications based on emerging research or evolving understanding of internalizing disorders. 
-            It is designed to integrate new related spectra or concepts as needed, reflecting the ongoing developments in the field.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">The Internalizing label refers to a category of mental health disorders characterized by inward-focused symptoms such as anxiety, depression, and withdrawal, reflecting emotional and cognitive distress.</rdfs:comment>
-        <rdfs:label xml:lang="en">Internalizing</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000012">
-        <futureReleaseInfo xml:lang="en">This spectrum allows for the integration of additional related spectra or concepts as new insights into thought disorders emerge. 
-            It is structured to adapt to evolving understandings and classifications within the domain of cognitive and thought-related disturbances.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Thought Disorder refers to a category of mental health conditions characterized by disorganized thinking, impaired reality testing, and disturbances in the form or content of thought.</rdfs:comment>
-        <rdfs:label xml:lang="en">Thought Disorder</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000013">
-        <futureReleaseInfo xml:lang="en">This spectrum is designed to accommodate the inclusion of new related spectra or additional concepts as understanding of detachment and related psychological phenomena evolves. 
-            It supports updates and extensions to reflect advances in research and shifts in diagnostic criteria.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Detachment refers to a psychological state characterized by emotional distance and disengagement from social interactions.</rdfs:comment>
-        <rdfs:label xml:lang="en">Detachment</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000014">
-        <futureReleaseInfo xml:lang="en">This spectrum is designed to be adaptable to the addition of new spectra or related concepts as research on disinhibited externalizing behaviors evolves. 
-            It allows for updates and expansions to incorporate emerging findings and shifts in diagnostic frameworks.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Disinhibited Externalizing involves behaviors that are impulsive and lacking in social restraint or inhibition.</rdfs:comment>
-        <rdfs:label xml:lang="en">Disinhibited Externalizing</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000015">
-        <futureReleaseInfo xml:lang="en">This spectrum is designed to accommodate potential future modifications and expansions. 
-            It supports the integration of new spectra or related concepts to reflect advancements in understanding antagonistic externalizing behaviors and their classification.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Antagonistic Externalizing describes behaviors that involve hostility and aggression towards others.</rdfs:comment>
-        <rdfs:label xml:lang="en">Antagonistic Externalizing</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000016">
-        <futureReleaseInfo xml:lang="en">This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Sexual Problems encompass difficulties and dysfunctions related to sexual health and behavior.</rdfs:comment>
-        <rdfs:label xml:lang="en">Sexual Problems</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000017">
-        <futureReleaseInfo xml:lang="en">This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Eating Pathology includes disorders and maladaptive behaviors related to eating and body image.</rdfs:comment>
-        <rdfs:label xml:lang="en">Eating Pathology</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000018">
-        <futureReleaseInfo xml:lang="en">This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Fear refers to an emotional response to perceived threats or danger.</rdfs:comment>
-        <rdfs:label xml:lang="en">Fear</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000019">
-        <futureReleaseInfo xml:lang="en">This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Distress involves significant emotional suffering or discomfort.</rdfs:comment>
-        <rdfs:label xml:lang="en">Distress</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000020">
-        <futureReleaseInfo xml:lang="en">This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Mania is characterized by elevated mood, increased activity, and impulsive behavior.</rdfs:comment>
-        <rdfs:label xml:lang="en">Mania</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000021">
-        <futureReleaseInfo xml:lang="en">This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Harmful Substance Abuse refers to the excessive use of substances that causes significant harm or impairment.</rdfs:comment>
-        <rdfs:label xml:lang="en">Harmful Substance Abuse</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/htp#HTP_0000022">
-        <futureReleaseInfo xml:lang="en">This subfactor is designed to be adaptable to future updates and expansions. 
-            It allows for the incorporation of new elements or modifications to existing components as research advances and our understanding of psychological phenomena evolves.</futureReleaseInfo>
-        <rdfs:comment xml:lang="en">Antisocial Behavior involves actions that violate societal norms and the rights of others.</rdfs:comment>
-        <rdfs:label xml:lang="en">Antisocial Behavior</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/htp#HTP_0000023">
         <rdfs:comment xml:lang="en">A component related to conversion disorders where psychological distress is expressed as physical symptoms.</rdfs:comment>
         <rdfs:label xml:lang="en">Conversion</rdfs:label>
@@ -3023,8 +2606,6 @@
         <rdfs:label xml:lang="en">Version Description</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
-
-
 
 <!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
