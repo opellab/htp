@@ -9,7 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.org/htp">
         <dcterms:contributor>Prof. Dr. Nils Opel</dcterms:contributor>
         <dcterms:creator>
@@ -29,6 +30,10 @@
         <rdfs:label>MDS Factorization</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.hitop-system.org/"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <dcterms:isVersionOf rdf:resource="http://purl.org/dc/terms/1.1"/>
+        <dcterms:issued rdf:resource="http://purl.org/dc/terms/1.1"/>
+        <dcterms:hasVersion rdf:resource="http://purl.org/dc/terms/1.1"/>
+        <skos:changeNote rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html"/>
     </owl:Ontology>
 
 </rdf:RDF>
