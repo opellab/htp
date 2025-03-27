@@ -195,8 +195,10 @@
 
     <!-- http://purl.org/htp#partOfVersionHistory -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/htp#partOfVersionHistory">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/htp#partOfVersionHistory">hasVersionID
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/htp#hasVersionID"/>
+        <rdfs:range rdf:resource="http://purl.org/htp#VersionHistory"/>
         <rdfs:comment xml:lang="en">Relates a version (e.g., Version_1_0) to the HiTOP Version History, linking a specific version to a version history entry.</rdfs:comment>
         <rdfs:label xml:lang="en">partOfVersionHistory</rdfs:label>
         <skos:changeNote xml:lang="en">
