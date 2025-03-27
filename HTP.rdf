@@ -600,8 +600,6 @@
 
     <owl:Class rdf:about="http://purl.org/htp#HiTOP-C00RGy">
         <rdfs:subClassOf rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <rdfs:comment xml:lang="en">A component of psychological panic is an intense, overwhelming fear that triggers physical symptoms and a sense of losing control.</rdfs:comment>
-        <rdfs:label xml:lang="en">Psychological panic</rdfs:label>
     </owl:Class>
     
 
@@ -714,8 +712,6 @@
 
     <owl:Class rdf:about="http://purl.org/htp#HiTOP-C00fKQ">
         <rdfs:subClassOf rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <rdfs:comment xml:lang="en">A component of generalized anxiety disorder symptoms is excessive, persistent worry that interferes with daily life and is often accompanied by physical symptoms like restlessness and fatigue.</rdfs:comment>
-        <rdfs:label xml:lang="en">Generalized anxiety disorder symptoms</rdfs:label>
     </owl:Class>
     
 
@@ -1150,8 +1146,6 @@
 
     <owl:Class rdf:about="http://purl.org/htp#HiTOP-T00Fe0">
         <rdfs:subClassOf rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <rdfs:comment xml:lang="en">A trait of negative relationships is that they contribute to stress, conflict, or emotional harm, often undermining well-being and personal growth.</rdfs:comment>
-        <rdfs:label xml:lang="en">Negative relationships</rdfs:label>
     </owl:Class>
     
 
@@ -1416,8 +1410,6 @@
 
     <owl:Class rdf:about="http://purl.org/htp#HiTOP-T01XQi">
         <rdfs:subClassOf rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <rdfs:comment xml:lang="en">A trait of attention seeking is the constant need for validation or recognition, often leading to behavior aimed at drawing focus from others.</rdfs:comment>
-        <rdfs:label xml:lang="en">Attention seeking</rdfs:label>
     </owl:Class>
     
 
@@ -1621,55 +1613,11 @@
     
 
 
-    <!-- http://purl.org/htp#HTP_0000124 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000124">
-        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-        <rdfs:comment xml:lang="en">A trait of negative relationships is that they contribute to stress, conflict, or emotional harm, often undermining well-being and personal growth.</rdfs:comment>
-        <rdfs:label xml:lang="en">Negative relationships</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000125 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000125">
-        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-        <rdfs:comment xml:lang="en">A component of psychological panic is an intense, overwhelming fear that triggers physical symptoms and a sense of losing control.</rdfs:comment>
-        <rdfs:label xml:lang="en">Psychological panic</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000126 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000126">
-        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-        <rdfs:comment xml:lang="en">A trait of attention seeking is the constant need for validation or recognition, often leading to behavior aimed at drawing focus from others.</rdfs:comment>
-        <rdfs:label xml:lang="en">Attention seeking</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/htp#HTP_0000127 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/htp#HTP_0000127">
-        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
-        <rdfs:comment xml:lang="en">A component of generalized anxiety disorder symptoms is excessive, persistent worry that interferes with daily life and is often accompanied by physical symptoms like restlessness and fatigue.</rdfs:comment>
-        <rdfs:label xml:lang="en">Generalized anxiety disorder symptoms</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/htp#HiTOP-C001qy -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C001qy">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1678,7 +1626,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00217">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1687,7 +1635,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C0033z">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1696,7 +1644,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00416">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1705,7 +1653,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C005Sv">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1714,7 +1662,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C006MD">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1723,7 +1671,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00JTU">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1732,7 +1680,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00KL0">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1741,7 +1689,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00LqY">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1750,7 +1698,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00Mpl">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1759,7 +1707,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00N4I">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1768,7 +1716,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00OuR">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1777,7 +1725,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00Pjp">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1786,7 +1734,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00Q1t">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HiTOP-C00RGy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00RGy">
+        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1795,7 +1752,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00S9m">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1804,7 +1761,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00TgL">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1813,7 +1770,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00Urw">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1822,7 +1779,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00VHv">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1831,7 +1788,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00WJc">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1840,7 +1797,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00XyI">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1849,7 +1806,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00Y8j">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1858,7 +1815,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00ZyP">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1867,7 +1824,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00aMF">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1876,7 +1833,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00bEx">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1885,7 +1842,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00cSn">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1894,7 +1851,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00dc1">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1903,7 +1860,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00eL">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HiTOP-C00fKQ -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00fKQ">
+        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1912,7 +1878,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00gvD">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1921,7 +1887,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00hPJ">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1930,7 +1896,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00iAh">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1939,7 +1905,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00jw5">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1948,7 +1914,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00kEN">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1957,7 +1923,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00l5y">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1966,7 +1932,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00mpe">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1975,7 +1941,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00nyb">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1984,7 +1950,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00oKM">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -1993,7 +1959,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00pnZ">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2002,7 +1968,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00qSD">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2011,7 +1977,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00rnS">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2020,7 +1986,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00sWr">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2029,7 +1995,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C00tUQ">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2038,7 +2004,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01DAb">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2047,7 +2013,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01Elz">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2056,7 +2022,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01FDy">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2065,7 +2031,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01GEY">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2074,7 +2040,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01HGq">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2083,7 +2049,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01Ip4">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2092,7 +2058,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01JH8">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2101,7 +2067,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01KXo">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2110,7 +2076,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01LSp">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2119,7 +2085,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-C01MjB">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2128,7 +2094,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T007eM">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2137,7 +2103,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T008mD">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2146,7 +2112,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T0094I">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2155,7 +2121,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00AZ">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2164,7 +2130,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00BXK">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2173,7 +2139,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00Cgy">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2182,7 +2148,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00D42">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2191,7 +2157,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00Eht">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HiTOP-T00Fe0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00Fe0">
+        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2200,7 +2175,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00G3d">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2209,7 +2184,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00HCy">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2218,7 +2193,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00IAT">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2227,7 +2202,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00ua9">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2236,7 +2211,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00vjR">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2245,7 +2220,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00wk6">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2254,7 +2229,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00xLn">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2263,7 +2238,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00yfU">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2272,7 +2247,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T00zDk">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2281,7 +2256,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T010c6">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2290,7 +2265,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T011K6">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2299,7 +2274,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T012QL">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2308,7 +2283,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T013F1">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2317,7 +2292,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T014BA">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2326,7 +2301,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T015o8">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2335,7 +2310,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T016k0">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2344,7 +2319,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T0177S">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2353,7 +2328,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T018ir">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2362,7 +2337,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T019Cj">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2371,7 +2346,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01A5i">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2380,7 +2355,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01BfQ">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2389,7 +2364,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01C1W">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2398,7 +2373,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01Neb">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2407,7 +2382,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01OY2">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2416,7 +2391,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01PMW">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2425,7 +2400,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01QNN">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2434,7 +2409,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01RYG">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2443,7 +2418,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01SYW">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2452,7 +2427,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01T3u">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2461,7 +2436,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01UGN">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2470,7 +2445,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01VXq">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2479,7 +2454,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01W1E">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/htp#HiTOP-T01XQi -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01XQi">
+        <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2488,7 +2472,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01Y7w">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2497,7 +2481,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01Ziz">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2506,7 +2490,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01a7u">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2515,7 +2499,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01bz7">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2524,7 +2508,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01cX5">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2533,7 +2517,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01d9I">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2542,7 +2526,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01eG6">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2551,7 +2535,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01fc8">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2560,7 +2544,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/htp#HiTOP-T01gKP">
         <rdf:type rdf:resource="http://purl.org/htp#HiTOP-O002sP"/>
-        <hasVersionID xml:lang="en">1.0</hasVersionID>
+        <hasVersionID>1.0</hasVersionID>
     </owl:NamedIndividual>
     
 
@@ -2579,7 +2563,7 @@
     <owl:NamedIndividual rdf:about="http://purl.org/htp#Version_1_0">
         <partOfVersionHistory rdf:resource="http://purl.org/htp#VersionHistory"/>
         <hasVersionID>1.0</hasVersionID>
-        <versionDescription xml:lang="en">Initial release of the HiTOP model with basic structure and categories for mental health classification.</versionDescription>
+        <versionDescription>Initial release of the HiTOP model with basic structure and categories for mental health classification.</versionDescription>
     </owl:NamedIndividual>
     
 
@@ -2656,6 +2640,10 @@
         <rdfs:comment xml:lang="en">Panic attacks characterized by physiological symptoms such as rapid heartbeat and sweating.</rdfs:comment>
         <rdfs:label xml:lang="en">Physiological panic</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HiTOP-C00RGy">
+        <rdfs:comment xml:lang="en">A component of psychological panic is an intense, overwhelming fear that triggers physical symptoms and a sense of losing control.</rdfs:comment>
+        <rdfs:label xml:lang="en">Psychological panic</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/htp#HiTOP-C00S9m">
         <rdfs:comment xml:lang="en">Compulsive behaviors related to cleaning or hygiene.</rdfs:comment>
         <rdfs:label xml:lang="en">Cleaning</rdfs:label>
@@ -2707,6 +2695,10 @@
     <rdf:Description rdf:about="http://purl.org/htp#HiTOP-C00eL">
         <rdfs:comment xml:lang="en">A positive state of mental and physical health, encompassing feelings of happiness and contentment.</rdfs:comment>
         <rdfs:label xml:lang="en">(low) Wellbeing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HiTOP-C00fKQ">
+        <rdfs:comment xml:lang="en">A component of generalized anxiety disorder symptoms is excessive, persistent worry that interferes with daily life and is often accompanied by physical symptoms like restlessness and fatigue.</rdfs:comment>
+        <rdfs:label xml:lang="en">Generalized anxiety disorder symptoms</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/htp#HiTOP-C00gvD">
         <rdfs:comment xml:lang="en">Re-living traumatic events through flashbacks, intrusive memories, or nightmares.</rdfs:comment>
@@ -2836,6 +2828,10 @@
         <rdfs:comment xml:lang="en">A trait characterized by difficulties in forming or maintaining a stable sense of self.</rdfs:comment>
         <rdfs:label xml:lang="en">Identity problems</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HiTOP-T00Fe0">
+        <rdfs:comment xml:lang="en">A trait of negative relationships is that they contribute to stress, conflict, or emotional harm, often undermining well-being and personal growth.</rdfs:comment>
+        <rdfs:label xml:lang="en">Negative relationships</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/htp#HiTOP-T00G3d">
         <rdfs:comment xml:lang="en">A trait characterized by a lack of resilience and a tendency to be easily hurt or affected by stress.</rdfs:comment>
         <rdfs:label xml:lang="en">Fragility</rdfs:label>
@@ -2964,6 +2960,10 @@
         <rdfs:comment xml:lang="en">A trait characterized by a desire for new, thrilling, or risky experiences.</rdfs:comment>
         <rdfs:label xml:lang="en">Excitement seeking</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/htp#HiTOP-T01XQi">
+        <rdfs:comment xml:lang="en">A trait of attention seeking is the constant need for validation or recognition, often leading to behavior aimed at drawing focus from others.</rdfs:comment>
+        <rdfs:label xml:lang="en">Attention seeking</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/htp#HiTOP-T01Y7w">
         <rdfs:comment xml:lang="en">A trait characterized by a lack of empathy and a tendency to be emotionally cold or indifferent to others.</rdfs:comment>
         <rdfs:label xml:lang="en">Callousness</rdfs:label>
@@ -3003,7 +3003,7 @@
     <rdf:Description rdf:about="http://purl.org/htp#versionDescription">
         <rdfs:comment xml:lang="en">A property used to describe the changes made in this version and provide an explanation of the version.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/htp#"/>
-        <rdfs:label xml:lang="en">Version Description</rdfs:label>
+        <rdfs:label>Version Description</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
