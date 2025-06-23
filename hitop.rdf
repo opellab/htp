@@ -16,6 +16,7 @@
     <owl:Ontology rdf:about="http://purl.org/hitop">
         <obo:iaoIAO_0000115 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <dcterms:contributor>Dr. Rogério Blitz</dcterms:contributor>
+        <dcterms:contributor>Dr. Marcel Jentsch</dcterms:contributor>
         <dcterms:contributor>Dr. André Kerber</dcterms:contributor>
         <dcterms:contributor>Prof. Dr. Nils Opel</dcterms:contributor>
         <dcterms:contributor>Dr. Yannik Terhorst</dcterms:contributor>
